@@ -1,0 +1,83 @@
+// ------------------------------------------------------------
+// Navigation module (example)
+// ------------------------------------------------------------
+
+// Place your BEM/SMACSS style .scss modules in the modules folder
+
+#nav-toggle {
+	float: right;
+	display: block;
+	text-align: right;
+	margin-top: -5px;
+	margin-right: -9px;
+	@include break($b) {
+		display: none;
+		margin-right: auto;
+	}
+}
+
+.nav-collapse {
+	@include clearfix;
+	background-color: $secondary;
+	clear: both;
+	text-align: center;
+	font-size: em-font(12px);
+	font-weight: lighter;
+	ul {
+		@include clearfix;
+		margin: 0; // cancel out global ul li style
+		li {margin: 0; list-style-type: none;}
+		li a {
+			display: inline-block;
+			width: 100%;
+			padding: 10px 5px;
+			color: white;
+			border-left: transparent 5px solid;
+			border-right: transparent 5px solid;
+			&:hover, &:active {
+				background-color: transparentize($light, 0.9);
+				border-left-color: $primary;
+			}
+		}
+	}
+	@include break($b) {
+		background-color: $primary;
+		clear: both;
+		margin: 0 -500%;
+  		padding: 0 500%;
+		ul {
+			padding-top: 0;
+			li {
+				float: left;
+				width: auto;
+				a {
+					width: auto;
+					padding: 20px 4px 16px;
+					@include break($d) {
+						padding: 20px 20px 16px;
+					}
+					color: $light;
+					border-bottom: 3px transparent solid;
+					display: block;
+					position: relative;
+					&:hover, &:active {
+						// &:after {
+						// 	position: absolute;
+						// 	bottom: -3px;
+						// 	left: 42%;
+						// 	content: "";
+						// 	width: 0px;
+						// 	height: 0px;
+						// 	border-style: solid;
+						// 	border-width: 0 10px 10px 10px;
+						// 	border-color: transparent transparent $secondary transparent;
+						// }
+						// background-color: lighten($dark, 20%);
+						// border-bottom-color: $secondary;
+						border-left-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
