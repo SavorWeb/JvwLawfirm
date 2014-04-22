@@ -4,16 +4,34 @@
 
 // Place your BEM/SMACSS style .scss modules in the modules folder
 
-#nav-toggle {
-	float: right;
-	display: block;
-	text-align: right;
-	margin-top: -5px;
-	margin-right: -9px;
-	@include break($b) {
-		display: none;
-		margin-right: auto;
+header.pagehead {
+	clear: both;
+	@include clearfix;
+	background-color: $primary;
+	border-bottom: $light solid 3px;
+	.navtop {
+		@include clearfix;
 	}
+	#nav-toggle {
+		float: right;
+		display: block;
+		text-align: right;
+		@include break($b) {
+			display: none;
+			margin-right: auto;
+		}
+		background-color: $secondary;
+		margin: 0;
+		padding-bottom: 23px;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-radius: 0;
+	}
+}
+
+.white-logo {
+	margin: 18px 0 0 10px;
+	max-width: 70%;
 }
 
 .nav-collapse {
@@ -23,22 +41,34 @@
 	text-align: center;
 	font-size: em-font(12px);
 	font-weight: lighter;
+	// border-bottom: $light solid 3px;
+	// position: relative;
+	// top: -3px;
+	// z-index: 5;
 	ul {
 		@include clearfix;
 		margin: 0; // cancel out global ul li style
-		li {margin: 0; list-style-type: none;}
-		li a {
-			display: inline-block;
-			width: 100%;
-			padding: 10px 5px;
-			color: white;
-			border-left: transparent 5px solid;
-			border-right: transparent 5px solid;
-			&:hover, &:active {
-				background-color: transparentize($light, 0.9);
-				border-left-color: $primary;
+		li {
+			float: left;
+			margin: 0;
+			list-style-type: none;
+			a {
+				display: inline-block;
+				width: 100%;
+				padding: 10px 5px;
+				color: white;
+				border-left: transparent 5px solid;
+				border-right: transparent 5px solid;
+				&:hover, &:active {
+					background-color: transparentize($light, 0.9);
+					// border-left-color: $primary;
+				}				
+				color: $light;
+				text-transform: uppercase;
+				padding: 20px;
+
 			}
-		}
+		}	
 	}
 	@include break($b) {
 		background-color: $primary;
@@ -61,22 +91,26 @@
 					display: block;
 					position: relative;
 					&:hover, &:active {
-						// &:after {
-						// 	position: absolute;
-						// 	bottom: -3px;
-						// 	left: 42%;
-						// 	content: "";
-						// 	width: 0px;
-						// 	height: 0px;
-						// 	border-style: solid;
-						// 	border-width: 0 10px 10px 10px;
-						// 	border-color: transparent transparent $secondary transparent;
-						// }
-						// background-color: lighten($dark, 20%);
-						// border-bottom-color: $secondary;
 						border-left-color: transparent;
 					}
 				}
+			}
+		}
+	}
+}
+
+.main-nav {
+	background-color: $secondary;
+	li ul {
+		display: none;
+	}
+	ul {
+		li {
+			text-align: center;
+			a {
+				display: block;
+				color: $light;
+				padding: 10px 0;
 			}
 		}
 	}

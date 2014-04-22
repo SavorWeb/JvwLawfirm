@@ -11,7 +11,7 @@ button {
   }
 }
 
-$color : $secondary;
+$color : $light;
 $transition: .3s;// increase this to see the transformations happen in slow motion
 
 $button-size : 2rem; 
@@ -72,8 +72,8 @@ $button-size : 2rem;
   }
 }
 .lines-button.close {
-  -webkit-transform: scale3d(.8,.8,.8);
-          transform: scale3d(.8,.8,.8);
+  // -webkit-transform: scale3d(.8,.8,.8);
+  //         transform: scale3d(.8,.8,.8);
 }
 
 //three-lines to x

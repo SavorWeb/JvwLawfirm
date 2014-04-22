@@ -1,5 +1,6 @@
 <?php include("_/inc/head.php"); ?>
 
+<section class="row">
 <h1>Heading 1</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, id, vero, commodi ut aperiam corporis nisi laudantium explicabo quis consequatur debitis eligendi quasi consequuntur asperiores deserunt placeat eos dolor ipsa.</p>
 <h2>Heading 2</h2>
@@ -46,5 +47,5 @@
 			<input type="hidden" name="submitted" id="submitted" value="true" />
 	</form>			
 </div>
-			
+		</section>	
 <?php include("_/inc/foot.php"); ?>

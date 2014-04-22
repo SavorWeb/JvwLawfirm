@@ -51,34 +51,90 @@ section {
 	@include clearfix;
 	clear: both;
 }
+////////////
+// STYLES //
+////////////
 
-header {
+.padded {
+	padding: 10px;
+}
+
+.pullwidth {
+	margin: 0 0 0 -20px;
+	.row {
+		padding-right: 0;
+	}
+	@include break($b) {
+		margin: auto;
+		.row {
+			padding-right: 20px;
+		}
+	}
+}
+
+.fullwidthimg {
+	height: 200px;
+	@include break($d) {
+		height: 500px;
+	}
 	background: url(../img/cdafall.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	nav {
-		@include clearfix;
-		background-color: $primary;
-		color: $light;
-		ul {
-			li {
-				float: left;
-				a {
-					color: $light;
-					text-transform: uppercase;
-					padding: 20px;
-				}
-			}	
-		}
+}
+
+// collapse style
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+.panel {
+
+}
+
+.panel-group {
+	background-color: $secondary;
+	text-align: center;
+}
+
+.panel-title a {
+	font-size: em-font(20px);
+	display: block;
+	color: $light;
+	width: 100%;	
+	padding: 10px;
+	&:hover {
+		background-color: lighten($secondary, 10%);
+	}
+	@include break($b) {
+		font-weight: normal;
 	}
 }
-////////////
-// STYLES //
-////////////
 
-
+.panel-body {
+	padding: 10px;
+	background-color: #ccc;
+	@extend .font-sans;
+	text-transform: uppercase;
+	font-weight: bold;
+	a {
+		color: $primary;
+		display: block;
+		padding: 5px;
+	}
+}
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */

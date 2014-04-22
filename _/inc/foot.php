@@ -3,8 +3,11 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="_/js/responsive-nav.min.js"></script>
 		<script src="_/js/swipe.min.js"></script>
+		<script src="_/js/collapse.min.js"></script>
 <script type="text/javascript">
-			var navigation = responsiveNav(".nav-collapse", {
+		$('#accordion').collapse();
+
+		var navigation = responsiveNav(".nav-collapse", {
 			customToggle: "#nav-toggle"
 		});
 
@@ -50,6 +53,7 @@
 		});
 		//-->!]]>
 </script>
+
 		<script src="_/js/script.min.js"></script>
 
 	</body>
