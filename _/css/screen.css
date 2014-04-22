@@ -78,28 +78,33 @@ textarea {
 }
 
 header.pagehead {
-  clear: both;
-  overflow: hidden;
-  *zoom: 1;
   background-color: #263645;
-  border-bottom: white solid 3px;
 }
 .lt-ie9 header.pagehead {
   background-color: white;
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 960px) {
   header.pagehead {
     background-color: white;
   }
 }
-header.pagehead .navtop {
-  overflow: hidden;
-  *zoom: 1;
+header.pagehead .row {
+  border-bottom: 3px solid white;
 }
-header.pagehead #nav-toggle {
+header.pagehead .navtop .white-logo {
+  margin: 15px 0 0 10px;
+  max-width: 70%;
+}
+.lt-ie9 header.pagehead .navtop .white-logo {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  header.pagehead .navtop .white-logo {
+    display: none;
+  }
+}
+header.pagehead .navtop #nav-toggle {
   float: right;
-  display: block;
-  text-align: right;
   background-color: #4c2a2e;
   margin: 0;
   padding-bottom: 23px;
@@ -107,83 +112,95 @@ header.pagehead #nav-toggle {
   padding-right: 15px;
   border-radius: 0;
 }
-.lt-ie9 header.pagehead #nav-toggle {
+.lt-ie9 header.pagehead .navtop #nav-toggle {
   display: none;
-  margin-right: auto;
 }
-@media screen and (min-width: 420px) {
-  header.pagehead #nav-toggle {
+@media screen and (min-width: 960px) {
+  header.pagehead .navtop #nav-toggle {
     display: none;
-    margin-right: auto;
   }
 }
-
-.white-logo {
-  margin: 18px 0 0 10px;
-  max-width: 70%;
-}
-
-.nav-collapse {
+header.pagehead .nav-collapse {
   overflow: hidden;
   *zoom: 1;
   background-color: #4c2a2e;
   clear: both;
   text-align: center;
-  font-size: 0.75em;
   font-weight: lighter;
   padding-bottom: 15px;
 }
-.nav-collapse ul.phonenumbers {
-  margin-bottom: 20px;
+.lt-ie9 header.pagehead .nav-collapse {
+  background-color: #263645;
+  height: 60px;
+  clear: both;
+  margin: 0 -500%;
+  padding: 0 500%;
 }
-.lt-ie9 .nav-collapse ul.phonenumbers {
-  float: right;
-  text-align: right;
-}
-@media screen and (min-width: 420px) {
-  .nav-collapse ul.phonenumbers {
-    float: right;
-    text-align: right;
+@media screen and (min-width: 960px) {
+  header.pagehead .nav-collapse {
+    background-color: #263645;
+    height: 60px;
+    clear: both;
+    margin: 0 -500%;
+    padding: 0 500%;
   }
 }
-.nav-collapse ul.phonenumbers li {
-  color: white;
-  float: left;
-  padding-top: 10px;
-}
-.lt-ie9 .nav-collapse ul.phonenumbers li {
-  padding-right: 20px;
-}
-@media screen and (min-width: 420px) {
-  .nav-collapse ul.phonenumbers li {
-    padding-right: 20px;
-  }
-}
-.nav-collapse ul.phonenumbers li a {
-  margin-top: -22px;
-  padding-bottom: 13px;
-}
-.nav-collapse ul {
+header.pagehead .nav-collapse ul {
   overflow: hidden;
   *zoom: 1;
   margin: 0;
 }
-.lt-ie9 .nav-collapse ul {
+.lt-ie9 header.pagehead .nav-collapse ul {
+  width: auto;
   float: left;
+  clear: none;
 }
-@media screen and (min-width: 420px) {
-  .nav-collapse ul {
+.lt-ie9 header.pagehead .nav-collapse ul.phonenumbers {
+  float: right;
+}
+.lt-ie9 header.pagehead .nav-collapse ul.phonenumbers li {
+  text-align: right;
+}
+.lt-ie9 header.pagehead .nav-collapse ul.phonenumbers li a {
+  padding: 14px 8px;
+}
+@media screen and (min-width: 960px) {
+  header.pagehead .nav-collapse ul {
+    width: auto;
     float: left;
+    clear: none;
+  }
+  header.pagehead .nav-collapse ul.phonenumbers {
+    float: right;
+  }
+  header.pagehead .nav-collapse ul.phonenumbers li {
+    text-align: right;
+  }
+  header.pagehead .nav-collapse ul.phonenumbers li a {
+    padding: 14px 8px;
   }
 }
-.nav-collapse ul li {
+header.pagehead .nav-collapse ul li {
   float: left;
   width: 50%;
   margin: 0;
   list-style-type: none;
 }
-.nav-collapse ul li a {
-  font-size: 1.25em;
+.lt-ie9 header.pagehead .nav-collapse ul li {
+  width: auto;
+}
+@media screen and (min-width: 960px) {
+  header.pagehead .nav-collapse ul li {
+    width: auto;
+  }
+}
+header.pagehead .nav-collapse ul li span {
+  font-size: 0.5em;
+  display: block;
+  clear: both;
+}
+header.pagehead .nav-collapse ul li a {
+  font-size: 0.9375em;
   display: inline-block;
   width: 100%;
   padding: 5px 0;
@@ -192,93 +209,49 @@ header.pagehead #nav-toggle {
   border-right: transparent 5px solid;
   color: white;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 20px 5px;
 }
-.nav-collapse ul li a:hover, .nav-collapse ul li a:active {
+header.pagehead .nav-collapse ul li a:hover, header.pagehead .nav-collapse ul li a:active {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.lt-ie9 .nav-collapse {
-  background-color: #263645;
-  clear: both;
-  margin: 0 -500%;
-  padding: 0 500%;
-}
-.lt-ie9 .nav-collapse ul {
-  width: auto !important;
-  padding-top: 0;
-}
-.lt-ie9 .nav-collapse ul li {
-  float: left;
-  width: auto;
-}
-.lt-ie9 .nav-collapse ul li a {
-  width: auto;
-  padding: 20px 4px 16px;
-  color: white;
-  border-bottom: 3px transparent solid;
-  display: block;
-  position: relative;
-}
-.lt-ie9 .lt-ie9 .nav-collapse ul li a {
-  padding: 20px 20px 16px;
-}
-@media screen and (min-width: 900px) {
-  .lt-ie9 .nav-collapse ul li a {
-    padding: 20px 20px 16px;
-  }
-}
-.lt-ie9 .nav-collapse ul li a:hover, .lt-ie9 .nav-collapse ul li a:active {
-  border-left-color: transparent;
-}
-@media screen and (min-width: 420px) {
-  .nav-collapse {
-    background-color: #263645;
-    clear: both;
-    margin: 0 -500%;
-    padding: 0 500%;
-  }
-  .nav-collapse ul {
-    width: auto !important;
-    padding-top: 0;
-  }
-  .nav-collapse ul li {
-    float: left;
-    width: auto;
-  }
-  .nav-collapse ul li a {
-    width: auto;
-    padding: 20px 4px 16px;
-    color: white;
-    border-bottom: 3px transparent solid;
-    display: block;
-    position: relative;
-  }
-  .lt-ie9 .nav-collapse ul li a {
-    padding: 20px 20px 16px;
-  }
-  .nav-collapse ul li a:hover, .nav-collapse ul li a:active {
-    border-left-color: transparent;
-  }
-}
-@media screen and (min-width: 420px) and (min-width: 900px) {
-  .nav-collapse ul li a {
-    padding: 20px 20px 16px;
-  }
-}
-
-.main-nav {
-  background-color: #4c2a2e;
-}
-.main-nav li ul {
+header.pagehead .logos {
   display: none;
 }
-.main-nav ul li {
-  text-align: center;
-}
-.main-nav ul li a {
+.lt-ie9 header.pagehead .logos {
   display: block;
-  color: white;
-  padding: 10px 0;
+  position: relative;
+  height: 80px;
+  padding: 25px 0;
+}
+.lt-ie9 header.pagehead .logos .logotype {
+  float: left;
+}
+.lt-ie9 header.pagehead .logos .slogan {
+  float: right;
+}
+.lt-ie9 header.pagehead .logos .logo {
+  position: relative;
+  margin: -85px auto 0;
+  width: 200px;
+}
+@media screen and (min-width: 960px) {
+  header.pagehead .logos {
+    display: block;
+    position: relative;
+    height: 80px;
+    padding: 25px 0;
+  }
+  header.pagehead .logos .logotype {
+    float: left;
+  }
+  header.pagehead .logos .slogan {
+    float: right;
+  }
+  header.pagehead .logos .logo {
+    position: relative;
+    margin: -85px auto 0;
+    width: 200px;
+  }
 }
 
 /* For use in conjunction with the Backbone Responsive Framework - https://github.com/joemottershaw/backbone */
@@ -525,7 +498,7 @@ img {
 .lt-ie9 .is-mobile {
   display: none;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
   .is-mobile {
     display: none;
   }
@@ -563,7 +536,7 @@ section {
 }
 
 .fullwidthimg {
-  height: 200px;
+  height: 150px;
   background: url(../img/cdafall.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -571,11 +544,11 @@ section {
   background-size: cover;
 }
 .lt-ie9 .fullwidthimg {
-  height: 500px;
+  height: 300px;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
   .fullwidthimg {
-    height: 500px;
+    height: 300px;
   }
 }
 
@@ -593,6 +566,14 @@ section {
   width: 100%;
   margin-top: -25px;
 }
+.lt-ie9 #area-toggle {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  #area-toggle {
+    display: none;
+  }
+}
 
 .area-collapse {
   border: 1px solid #4c2a2e;
@@ -602,6 +583,50 @@ section {
   overflow: hidden;
   -webkit-transition: height 0.35s ease;
   transition: height 0.35s ease;
+}
+.lt-ie9 .area-collapse {
+  height: auto;
+  display: block;
+  border-width: 0;
+  position: relative;
+}
+.lt-ie9 .area-collapse .responsive-accordion-head {
+  width: 20%;
+  float: left;
+}
+.lt-ie9 .area-collapse .responsive-accordion-panel {
+  position: relative;
+  clear: both;
+}
+.lt-ie9 .area-collapse .responsive-accordion-panel ul {
+  position: absolute;
+}
+.lt-ie9 .area-collapse .responsive-accordion-panel ul li {
+  float: left;
+  padding-right: 10px;
+}
+@media screen and (min-width: 960px) {
+  .area-collapse {
+    height: auto;
+    display: block;
+    border-width: 0;
+    position: relative;
+  }
+  .area-collapse .responsive-accordion-head {
+    width: 20%;
+    float: left;
+  }
+  .area-collapse .responsive-accordion-panel {
+    position: relative;
+    clear: both;
+  }
+  .area-collapse .responsive-accordion-panel ul {
+    position: absolute;
+  }
+  .area-collapse .responsive-accordion-panel ul li {
+    float: left;
+    padding-right: 10px;
+  }
 }
 
 .open-p {
@@ -615,7 +640,7 @@ section {
   font-family: 'Garamond', 'Adobe Garamond', Garamond, Times, serif;
 }
 
-.font-sans, .nav-collapse ul li a {
+.font-sans, header.pagehead .nav-collapse ul li a {
   font-family: 'Gotham', arial, sans-serif;
 }
 
@@ -963,9 +988,9 @@ input, textarea {
     display: inline-block;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
   .row {
-    min-width: 900px;
+    min-width: 960px;
   }
   .row .colspan8-1 {
     width: 12.5%;
@@ -1185,9 +1210,9 @@ input, textarea {
     display: inline-block;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1100px) {
   .row {
-    width: 1300px;
+    width: 1100px;
   }
 }
 .lt-ie9 .row {
