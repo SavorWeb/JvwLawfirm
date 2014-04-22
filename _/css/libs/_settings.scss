@@ -19,12 +19,12 @@
 $a								: 300px;	// first viewport 
 $b								: 420px;	// up one
 $c								: 600px;	// up two
-$d								: 900px;	// up three
+$d								: 960px;	// up three
 $e								: 1100px;	// up four
 $f								: 1300px;	// up five
 $ie-fixed						: 980px;    // Viewport for IE fixed width
 
-$max 							: $f; 	// max viewport. Syntactically makes for a nicer option
+$max 							: $e; 	// max viewport. Syntactically makes for a nicer option
 
 
 // At some point, you'll want to switch from a one column view to multi-column.
