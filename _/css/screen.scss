@@ -43,6 +43,13 @@ img {
 	max-width: 100%;
 }
 
+.is-mobile {
+
+	@include break($d) {
+		display: none;
+	}
+}
+
 ////////////
 // LAYOUT //
 ////////////
@@ -84,57 +91,93 @@ section {
 	background-size: cover;
 }
 
+// second nav
+
+section {
+	overflow: visible;
+}
+
+#area-toggle {
+	@extend .font-body;
+	letter-spacing: 1px;
+	background-color: $secondary;
+	color: $light;
+	padding: 15px 20px;
+	font-size: em-font(25px);
+	margin: 0;
+	width: 100%;
+	margin-top: -25px;
+
+}
+
+.area-collapse {
+	border: 1px solid $secondary;
+	height: 0;
+	display: none;
+	margin-bottom: 10px;
+	overflow: hidden;
+	-webkit-transition: height 0.35s ease;
+	transition: height 0.35s ease;
+}
+
+.open-p {
+	display: block;
+	height: auto;
+}
+
+
+
 // collapse style
 
-.collapse {
-  display: none;
-}
-.collapse.in {
-  display: block;
-}
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  transition: height 0.35s ease;
-}
+// .collapse {
+//   display: none;
+// }
+// .collapse.in {
+//   display: block;
+// }
+// .collapsing {
+//   position: relative;
+//   height: 0;
+//   overflow: hidden;
+//   -webkit-transition: height 0.35s ease;
+//   transition: height 0.35s ease;
+// }
 
-.panel {
+// .panel {
 
-}
+// }
 
-.panel-group {
-	background-color: $secondary;
-	text-align: center;
-}
+// .panel-group {
+// 	background-color: $secondary;
+// 	text-align: center;
+// }
 
-.panel-title a {
-	font-size: em-font(20px);
-	display: block;
-	color: $light;
-	width: 100%;	
-	padding: 10px;
-	&:hover {
-		background-color: lighten($secondary, 10%);
-	}
-	@include break($b) {
-		font-weight: normal;
-	}
-}
+// .panel-title a {
+// 	font-size: em-font(20px);
+// 	display: block;
+// 	color: $light;
+// 	width: 100%;	
+// 	padding: 10px;
+// 	&:hover {
+// 		background-color: lighten($secondary, 10%);
+// 	}
+// 	@include break($b) {
+// 		font-weight: normal;
+// 	}
+// }
 
-.panel-body {
-	padding: 10px;
-	background-color: #ccc;
-	@extend .font-sans;
-	text-transform: uppercase;
-	font-weight: bold;
-	a {
-		color: $primary;
-		display: block;
-		padding: 5px;
-	}
-}
+// .panel-body {
+// 	padding: 10px;
+// 	background-color: #ccc;
+// 	@extend .font-sans;
+// 	text-transform: uppercase;
+// 	font-weight: bold;
+// 	a {
+// 		color: $primary;
+// 		display: block;
+// 		padding: 5px;
+// 	}
+// }
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */

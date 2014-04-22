@@ -3,9 +3,8 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="_/js/responsive-nav.min.js"></script>
 		<script src="_/js/swipe.min.js"></script>
-		<script src="_/js/collapse.min.js"></script>
+		<script src="_/js/responsive-accordion.min.js"></script>
 <script type="text/javascript">
-		$('#accordion').collapse();
 
 		var navigation = responsiveNav(".nav-collapse", {
 			customToggle: "#nav-toggle"
@@ -16,6 +15,7 @@
 		window.mySwipe = Swipe(elem, {
 		  	auto: 6000,
 		});
+
 </script>
 <script type="text/javascript">
 		<!--//--><![CDATA[//><!--
@@ -53,7 +53,13 @@
 		});
 		//-->!]]>
 </script>
-
+	<script>
+	$(document).ready(function(){
+		$('#area-toggle').on('click', function(){
+			$('.area-collapse').toggleClass('open-p');
+		});
+	});
+	</script>
 		<script src="_/js/script.min.js"></script>
 
 	</body>

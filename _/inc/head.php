@@ -10,6 +10,7 @@
 	<meta name="keywords" content="..." />
 
 	<title>Site Title</title>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="_/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>		
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 	<!-- TODO: Download a custom build of modernizer to suit the project -->
@@ -19,7 +20,7 @@
 	<header class="pagehead pullwidth">
 <section class="row">
 		<div class="navtop">
-			<img class="white-logo" src="_/img/logotype.png" alt="">
+			<img class="is-mobile white-logo" src="_/img/logotype.png" alt="">
 
 			<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 		</div>
@@ -31,7 +32,7 @@
 				<li><a href="/about">About</a></li>
 				<li><a href="/attorneys">Attorneys</a></li>
 			</ul>
-			<ul>
+			<ul class="phonenumbers">
 				<li>Local callers <a href="tel:6676670683">(208) 667-0683</a></li>
 				<li>Toll free line <a href="tel:8886670683">(888) 667-0683</a></li>
 			</ul>
@@ -47,7 +48,54 @@
 		<div class="fullwidthimg"></div>
 	</header>
 
-<div class="panel-group" id="accordion">
+<section class="row">
+		<button type="button" role="button" id="area-toggle">
+			Practice Areas
+		</button>
+			<ul class="area-collapse responsive-accordion responsive-accordion-default bm-larger">
+				<li>
+					<div class="responsive-accordion-head">Injuries<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
+					<div class="responsive-accordion-panel">
+						<ul>
+							<li><a href="/accidents">Auto Accidents</a></li>
+							<li><a href="/drugs">Dangerous Drugs</a></li>
+							<li><a href="/products">Dangerous Products</a></li>
+							<li><a href="/malpractice">Medical Malpractice</a></li>
+							<li><a href="/compensation">Workers Compensation</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="responsive-accordion-head">Personal<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
+					<div class="responsive-accordion-panel">
+						<ul>
+							<li><a href="/bankruptcy">Bankruptcy</a></li>
+							<li><a href="/defense">Criminal Defense</a></li>
+							<li><a href="/family">Family Law</a></li>
+							<li><a href="/planning">Wills, Estate Planning, and Probate</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="responsive-accordion-head">Business<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
+					<div class="responsive-accordion-panel">
+						<ul>
+							<li><a href="/business">Business and Corporate Law</a></li>
+							<li><a href="/employment">Employment Law</a></li>
+							<li><a href="/official">Municipal and Administrative Law</a></li>
+							<li><a href="/reservation">Patents, Trademarks and Copyrights</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="/real-estate"><div href="/real-estate" class="responsive-accordion-head">Real Estate</div></a>
+				</li>
+				<li>
+					<a href="/sexual-abuse"><div href="/sexual-abuse" class="responsive-accordion-head">Sexual Abuse</div></a>
+				</li>
+			</ul>
+</section>
+<!-- <div class="panel-group" id="accordion">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">
@@ -124,7 +172,7 @@
 			</h4>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!-- 	<nav class="main-nav">
 		<ul>

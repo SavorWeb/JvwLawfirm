@@ -84,6 +84,14 @@ header.pagehead {
   background-color: #263645;
   border-bottom: white solid 3px;
 }
+.lt-ie9 header.pagehead {
+  background-color: white;
+}
+@media screen and (min-width: 420px) {
+  header.pagehead {
+    background-color: white;
+  }
+}
 header.pagehead .navtop {
   overflow: hidden;
   *zoom: 1;
@@ -123,21 +131,62 @@ header.pagehead #nav-toggle {
   text-align: center;
   font-size: 0.75em;
   font-weight: lighter;
+  padding-bottom: 15px;
+}
+.nav-collapse ul.phonenumbers {
+  margin-bottom: 20px;
+}
+.lt-ie9 .nav-collapse ul.phonenumbers {
+  float: right;
+  text-align: right;
+}
+@media screen and (min-width: 420px) {
+  .nav-collapse ul.phonenumbers {
+    float: right;
+    text-align: right;
+  }
+}
+.nav-collapse ul.phonenumbers li {
+  color: white;
+  float: left;
+  padding-top: 10px;
+}
+.lt-ie9 .nav-collapse ul.phonenumbers li {
+  padding-right: 20px;
+}
+@media screen and (min-width: 420px) {
+  .nav-collapse ul.phonenumbers li {
+    padding-right: 20px;
+  }
+}
+.nav-collapse ul.phonenumbers li a {
+  margin-top: -22px;
+  padding-bottom: 13px;
 }
 .nav-collapse ul {
   overflow: hidden;
   *zoom: 1;
   margin: 0;
 }
+.lt-ie9 .nav-collapse ul {
+  float: left;
+}
+@media screen and (min-width: 420px) {
+  .nav-collapse ul {
+    float: left;
+  }
+}
 .nav-collapse ul li {
   float: left;
+  width: 50%;
   margin: 0;
   list-style-type: none;
 }
 .nav-collapse ul li a {
+  font-size: 1.25em;
   display: inline-block;
   width: 100%;
-  padding: 10px 5px;
+  padding: 5px 0;
   color: white;
   border-left: transparent 5px solid;
   border-right: transparent 5px solid;
@@ -155,6 +204,7 @@ header.pagehead #nav-toggle {
   padding: 0 500%;
 }
 .lt-ie9 .nav-collapse ul {
+  width: auto !important;
   padding-top: 0;
 }
 .lt-ie9 .nav-collapse ul li {
@@ -188,6 +238,7 @@ header.pagehead #nav-toggle {
     padding: 0 500%;
   }
   .nav-collapse ul {
+    width: auto !important;
     padding-top: 0;
   }
   .nav-collapse ul li {
@@ -228,6 +279,26 @@ header.pagehead #nav-toggle {
   display: block;
   color: white;
   padding: 10px 0;
+}
+
+/* For use in conjunction with the Backbone Responsive Framework - https://github.com/joemottershaw/backbone */
+.responsive-accordion li .responsive-accordion-head {
+  cursor: pointer;
+}
+
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-head {
+  padding: 10px 30px 10px 10px;
+  position: relative;
+}
+
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-head i {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-panel {
+  padding: 20px;
 }
 
 /*! responsive-nav.js 1.0.32 by @viljamis */
@@ -451,6 +522,15 @@ img {
   max-width: 100%;
 }
 
+.lt-ie9 .is-mobile {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .is-mobile {
+    display: none;
+  }
+}
+
 section {
   overflow: hidden;
   *zoom: 1;
@@ -499,65 +579,43 @@ section {
   }
 }
 
-.collapse {
-  display: none;
+section {
+  overflow: visible;
 }
 
-.collapse.in {
-  display: block;
+#area-toggle {
+  letter-spacing: 1px;
+  background-color: #4c2a2e;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.5625em;
+  margin: 0;
+  width: 100%;
+  margin-top: -25px;
 }
 
-.collapsing {
-  position: relative;
+.area-collapse {
+  border: 1px solid #4c2a2e;
   height: 0;
+  display: none;
+  margin-bottom: 10px;
   overflow: hidden;
   -webkit-transition: height 0.35s ease;
   transition: height 0.35s ease;
 }
 
-.panel-group {
-  background-color: #4c2a2e;
-  text-align: center;
-}
-
-.panel-title a {
-  font-size: 1.25em;
+.open-p {
   display: block;
-  color: white;
-  width: 100%;
-  padding: 10px;
-}
-.panel-title a:hover {
-  background-color: #6d3c42;
-}
-.lt-ie9 .panel-title a {
-  font-weight: normal;
-}
-@media screen and (min-width: 420px) {
-  .panel-title a {
-    font-weight: normal;
-  }
-}
-
-.panel-body {
-  padding: 10px;
-  background-color: #ccc;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.panel-body a {
-  color: #263645;
-  display: block;
-  padding: 5px;
+  height: auto;
 }
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */
-.font-body, body {
+.font-body, body, #area-toggle {
   font-family: 'Garamond', 'Adobe Garamond', Garamond, Times, serif;
 }
 
-.font-sans, .panel-body {
+.font-sans, .nav-collapse ul li a {
   font-family: 'Gotham', arial, sans-serif;
 }
 

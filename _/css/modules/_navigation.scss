@@ -8,6 +8,7 @@ header.pagehead {
 	clear: both;
 	@include clearfix;
 	background-color: $primary;
+	@include break($b) {background-color: $light;}
 	border-bottom: $light solid 3px;
 	.navtop {
 		@include clearfix;
@@ -41,21 +42,42 @@ header.pagehead {
 	text-align: center;
 	font-size: em-font(12px);
 	font-weight: lighter;
-	// border-bottom: $light solid 3px;
-	// position: relative;
-	// top: -3px;
-	// z-index: 5;
+	padding-bottom: 15px;
+	ul.phonenumbers {
+		margin-bottom: 20px;
+		@include break($b) {
+			float: right;
+			text-align: right;
+		}
+		li {
+			color: $light;
+			float: left;
+			padding-top: 10px;
+			@include break($b) {padding-right: 20px;}
+			a {
+				margin-top: -22px;
+				padding-bottom: 13px;
+
+			}
+		}
+	}
 	ul {
 		@include clearfix;
 		margin: 0; // cancel out global ul li style
+		@include break($b) {
+			float: left;
+		}
 		li {
 			float: left;
+			width: 50%;
 			margin: 0;
 			list-style-type: none;
 			a {
+				@extend .font-sans;
+				font-size: em-font(20px);
 				display: inline-block;
 				width: 100%;
-				padding: 10px 5px;
+				padding: 5px 0;
 				color: white;
 				border-left: transparent 5px solid;
 				border-right: transparent 5px solid;
@@ -76,6 +98,7 @@ header.pagehead {
 		margin: 0 -500%;
   		padding: 0 500%;
 		ul {
+			width: auto !important;
 			padding-top: 0;
 			li {
 				float: left;
