@@ -260,13 +260,13 @@ header.pagehead .logos {
 }
 
 .responsive-accordion-default.responsive-accordion li .responsive-accordion-head {
-  padding: 10px 30px 10px 10px;
+  padding: 20px;
   position: relative;
 }
 
 .responsive-accordion-default.responsive-accordion li .responsive-accordion-head i {
   position: absolute;
-  top: 12px;
+  top: 18px;
   right: 10px;
 }
 
@@ -565,6 +565,7 @@ section {
   margin: 0;
   width: 100%;
   margin-top: -25px;
+  margin-bottom: 35px;
 }
 .lt-ie9 #area-toggle {
   display: none;
@@ -579,54 +580,124 @@ section {
   border: 1px solid #4c2a2e;
   height: 0;
   display: none;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  transition: height 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.area-collapse.marginbottom {
+  margin-bottom: 80px;
+}
+.area-collapse .responsive-accordion-panel a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .lt-ie9 .area-collapse {
-  height: auto;
+  height: 45px;
   display: block;
+  overflow: visible;
   border-width: 0;
   position: relative;
+  box-shadow: -25rem 0 0 #e6e6e6, 25rem 0 0 #e6e6e6;
+  background-color: #e6e6e6;
 }
 .lt-ie9 .area-collapse .responsive-accordion-head {
+  font-size: 1.5625em;
+  margin-top: -30px;
   width: 20%;
   float: left;
+  background-color: #4c2a2e;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.lt-ie9 .area-collapse .responsive-accordion-head .fa {
+  color: #7d454c;
+}
+.lt-ie9 .area-collapse .responsive-accordion-head:hover, .lt-ie9 .area-collapse .responsive-accordion-head:active, .lt-ie9 .area-collapse .responsive-accordion-head.active {
+  background-color: #6d3c42;
+}
+.lt-ie9 .area-collapse .responsive-accordion-head:hover .fa, .lt-ie9 .area-collapse .responsive-accordion-head:active .fa, .lt-ie9 .area-collapse .responsive-accordion-head.active .fa {
+  color: white;
 }
 .lt-ie9 .area-collapse .responsive-accordion-panel {
-  position: relative;
-  clear: both;
-}
-.lt-ie9 .area-collapse .responsive-accordion-panel ul {
   position: absolute;
+  box-shadow: -25rem 0 0 #e6e6e6, 25rem 0 0 #e6e6e6;
+  width: 100%;
+  margin-top: 35px;
+  clear: both;
+  background-color: #e6e6e6;
 }
 .lt-ie9 .area-collapse .responsive-accordion-panel ul li {
   float: left;
-  padding-right: 10px;
+}
+.lt-ie9 .area-collapse .responsive-accordion-panel ul li a {
+  padding: 10px 15px;
+  display: block;
+}
+.lt-ie9 .area-collapse .responsive-accordion-panel ul li a span {
+  display: block;
+  clear: both;
+}
+.lt-ie9 .area-collapse .responsive-accordion-panel ul li a:hover, .lt-ie9 .area-collapse .responsive-accordion-panel ul li a:active {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 960px) {
   .area-collapse {
-    height: auto;
+    height: 45px;
     display: block;
+    overflow: visible;
     border-width: 0;
     position: relative;
+    box-shadow: -25rem 0 0 #e6e6e6, 25rem 0 0 #e6e6e6;
+    background-color: #e6e6e6;
   }
   .area-collapse .responsive-accordion-head {
+    font-size: 1.5625em;
+    margin-top: -30px;
     width: 20%;
     float: left;
+    background-color: #4c2a2e;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  .area-collapse .responsive-accordion-head .fa {
+    color: #7d454c;
+  }
+  .area-collapse .responsive-accordion-head:hover, .area-collapse .responsive-accordion-head:active, .area-collapse .responsive-accordion-head.active {
+    background-color: #6d3c42;
+  }
+  .area-collapse .responsive-accordion-head:hover .fa, .area-collapse .responsive-accordion-head:active .fa, .area-collapse .responsive-accordion-head.active .fa {
+    color: white;
   }
   .area-collapse .responsive-accordion-panel {
-    position: relative;
-    clear: both;
-  }
-  .area-collapse .responsive-accordion-panel ul {
     position: absolute;
+    box-shadow: -25rem 0 0 #e6e6e6, 25rem 0 0 #e6e6e6;
+    width: 100%;
+    margin-top: 35px;
+    clear: both;
+    background-color: #e6e6e6;
   }
   .area-collapse .responsive-accordion-panel ul li {
     float: left;
-    padding-right: 10px;
   }
+  .area-collapse .responsive-accordion-panel ul li a {
+    padding: 10px 15px;
+    display: block;
+  }
+  .area-collapse .responsive-accordion-panel ul li a span {
+    display: block;
+    clear: both;
+  }
+  .area-collapse .responsive-accordion-panel ul li a:hover, .area-collapse .responsive-accordion-panel ul li a:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-panel {
+  padding: 0px;
 }
 
 .open-p {
@@ -640,7 +711,7 @@ section {
   font-family: 'Garamond', 'Adobe Garamond', Garamond, Times, serif;
 }
 
-.font-sans, header.pagehead .nav-collapse ul li a {
+.font-sans, header.pagehead .nav-collapse ul li a, .area-collapse .responsive-accordion-panel {
   font-family: 'Gotham', arial, sans-serif;
 }
 

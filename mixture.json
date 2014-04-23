@@ -21,7 +21,7 @@
   "preprocessorScriptOutput": "_/js",
   "preprocessorStyleOutput": "_/css",
   "projectDescription": "Sassaparilla",
-  "projectName": "Not Set",
+  "projectName": "JVW Law",
   "publishedId": null,
   "remoteDebugPort": 8081,
   "routes": null,
@@ -29,7 +29,7 @@
   "serverHostname": null,
   "serverPort": null,
   "simpleModeFileTypes": null,
-  "simpleModePartnerServer": "localhost:8888/notset",
+  "simpleModePartnerServer": "localhost:8888/newjvw",
   "sitemap": false,
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",
@@ -42,7 +42,7 @@
   "port": 21,
   "username": "clie4036",
   "password": "TwoCre@t1ve",
-  "path": "/notset/",
+  "path": "/newjvw/",
   "secure": false
 }
 

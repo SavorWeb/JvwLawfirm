@@ -57,11 +57,11 @@
 			<div class="responsive-accordion-head">Injuries<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
 			<div class="responsive-accordion-panel">
 				<ul>
-					<li><a href="/accidents">Auto Accidents</a></li>
-					<li><a href="/drugs">Dangerous Drugs</a></li>
-					<li><a href="/products">Dangerous Products</a></li>
-					<li><a href="/malpractice">Medical Malpractice</a></li>
-					<li><a href="/compensation">Workers Compensation</a></li>
+					<li><a href="/accidents">Auto <span>Accidents</span></a></li>
+					<li><a href="/drugs">Dangerous <span>Drugs</span></a></li>
+					<li><a href="/products">Dangerous <span>Products</span></a></li>
+					<li><a href="/malpractice">Medical <span>Malpractice</span></a></li>
+					<li><a href="/compensation">Workers <span>Compensation</span></a></li>
 				</ul>
 			</div>
 		</li>
@@ -69,10 +69,10 @@
 			<div class="responsive-accordion-head">Personal<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
 			<div class="responsive-accordion-panel">
 				<ul>
-					<li><a href="/bankruptcy">Bankruptcy</a></li>
-					<li><a href="/defense">Criminal Defense</a></li>
-					<li><a href="/family">Family Law</a></li>
-					<li><a href="/planning">Wills, Estate Planning, and Probate</a></li>
+					<li><a href="/bankruptcy">Filing for<span>Bankruptcy</span></a></li>
+					<li><a href="/defense">Criminal <span>Defense</span></a></li>
+					<li><a href="/family">Family <span>Law</span></a></li>
+					<li><a href="/planning">Wills, Estate Planning, <span>and Probate</span></a></li>
 				</ul>
 			</div>
 		</li>
@@ -80,10 +80,10 @@
 			<div class="responsive-accordion-head">Business<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
 			<div class="responsive-accordion-panel">
 				<ul>
-					<li><a href="/business">Business and Corporate Law</a></li>
-					<li><a href="/employment">Employment Law</a></li>
-					<li><a href="/official">Municipal and Administrative Law</a></li>
-					<li><a href="/reservation">Patents, Trademarks and Copyrights</a></li>
+					<li><a href="/business">Business and <span>Corporate Law</span></a></li>
+					<li><a href="/employment">Employment <span>Law</span></a></li>
+					<li><a href="/official">Municipal and <span>Administrative Law</span></a></li>
+					<li><a href="/reservation">Patents, Trademarks <span>and Copyrights</span></a></li>
 				</ul>
 			</div>
 		</li>

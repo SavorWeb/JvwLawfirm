@@ -32,11 +32,13 @@
 							thisPlus.show();
 							thisMinus.hide();
 							thisPanel.removeClass('active').slideUp();
+							thisAccordion.removeClass('marginbottom');
 						} else {
 							thisHead.addClass('active');
 							thisPlus.hide();
 							thisMinus.show();
 							thisPanel.addClass('active').slideDown();
+							thisAccordion.addClass('marginbottom');
 						}
 				});
 		});
