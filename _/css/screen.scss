@@ -17,6 +17,7 @@
 
 html {
 	font-size: 100%;
+	overflow-x: hidden;
 	@include break-max(768px, $IE9: false) { // Stop at precise width, as we're talking about devices
 		-webkit-text-size-adjust: 100%;	// Stops text scaling in iOS.
 	}
@@ -24,6 +25,7 @@ html {
 
 body {
 	@extend .font-body;
+	overflow-x: hidden;
 	background: $body-color;
 	color: $base-color;
 }
@@ -192,64 +194,207 @@ section {
 	padding: 0px;
 }
 
-.open-p {
-	display: block;
-	height: auto;
+#contact {
+	// display: none;
+	// height: 0;
+	background-color: $grey;
+	padding: 20px 0 20px;
+	position: relative;
+
+	@include break($c) {
+		padding-top: 60px;
+		padding-bottom: 45px;
+		&:after {
+			content: "";
+
+			height: 90px;
+			width: 90px;
+			position: absolute;
+			background-color: $light;
+			margin: 0 auto;
+			top: -45px;
+			left: 47%;
+			border-radius: 500px;
+		}
+	}
 }
 
+.open-p {
+	display: block !important;
+	height: auto !important;
+}
 
+.is-typeset {
+	img {
+		margin: 0 0 30px 0;
+		clear: both;
+		width: 100%;
+	}
+	.right {
+		float: right;
+		margin: 0 0 15px 30px;
+		@include break($b) {width: 40%;}
+		@include break($e) {
+			margin-right: -5%;
+		}
+		@include break($f) {
+			margin-right: -10%;
+		}
+	}
+	.left {
+		float: left;
+		margin: 0 30px 15px 0;
+		@include break($b) {width: 40%;}
+		@include break($e) {
+			margin-left: -5%;
+		}
+		@include break($f) {
+			margin-left: -10%;
+		}
+	}
 
-// collapse style
+	blockquote {
+		padding: 5%;
+		clear: both;
+		background-color: $secondary;
+		color: $light;
+		&:before {
+			content: "“ ";
+		}
+		&:after {
+			content: " ”";	
+		}
+		@include break($b) {
+			clear: none;
+			float: right;
+		}
+	}
 
-// .collapse {
-//   display: none;
-// }
-// .collapse.in {
-//   display: block;
-// }
-// .collapsing {
-//   position: relative;
-//   height: 0;
-//   overflow: hidden;
-//   -webkit-transition: height 0.35s ease;
-//   transition: height 0.35s ease;
-// }
+}
 
-// .panel {
+.contact-foot {
+	background-color: $primary;
+	.contact-btn {		
+		clear: both;
+		padding: 25px 0;
+		@include clearfix;
+		img {
+			width: 100%;
+			padding: 0 10px;
+			max-width: 450px;
+			display: block;
+			// margin: 0 auto;
+			@include break($c) {
+				// float: left;
+				// width: 40%;
+			}
+		}
+		button {
+			font-size: em-font(20px);
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: $light;
+			background-color: transparentize($light, 0.9);
+			// margin: 20px auto;
+			display: block;
+			padding: 10px 45px;
+			@include break($c) {
+				font-size: em-font(25px);
+				margin: 15px 25px 10px 0;
+				padding: 10px 45px;
+				// float: right;
+			}
+		}
+	}
+}
 
-// }
+.credit {
+	small {
+		@extend .font-sans;
+		color: $primary;
+		font-weight: bold;
+		font-size: $eta;
+		text-transform: uppercase;
+		margin: 20px 0 15px;
+		display: block;
+		text-align: center;
+	}
+}
 
-// .panel-group {
-// 	background-color: $secondary;
-// 	text-align: center;
-// }
+.btn {
+	background-color: $secondary;
+	color: $light;
+	font-size: em-font(12px);
+	letter-spacing: 1px;
+	padding: 10px 20px !important;
+	margin: 10px 0 !important;
+	@extend .font-sans;
+	text-transform: uppercase;
+}
 
-// .panel-title a {
-// 	font-size: em-font(20px);
-// 	display: block;
-// 	color: $light;
-// 	width: 100%;	
-// 	padding: 10px;
-// 	&:hover {
-// 		background-color: lighten($secondary, 10%);
-// 	}
-// 	@include break($b) {
-// 		font-weight: normal;
-// 	}
-// }
+.gallery {
+	margin-bottom: 50px;
+	@include clearfix; 
+	div {
+		margin-bottom: 15px;
+	}
+	img {
+		border-radius: 500px;
+		margin-bottom: 10px;
+	}
+	a {
+		display: block;
+	}
+	h4 {
+		text-align: center;
+		span {
+			display: block;
+		}
+	}
+	.colspan2-1 {
+		width: 50%;
+		padding-left: 3%; 
+	}
+}
 
-// .panel-body {
-// 	padding: 10px;
-// 	background-color: $grey;
-// 	@extend .font-sans;
-// 	text-transform: uppercase;
-// 	font-weight: bold;
-// 	a {
-// 		color: $primary;
-// 		display: block;
-// 		padding: 5px;
-// 	}
-// }
+#sidebar {
+	background-color: $grey;
+	margin-bottom: 100px;
+	@include break($c) {
+		margin-bottom: 0;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: -9955px;
+			right: 0;
+			border-left: 9999px solid $grey;
+		}
+	}
+	text-align: center;
+	img {
+		border-radius: 500px;
+		margin-top: -110px;
+		max-width: 200px;
+		@include break($c) {
+			margin-top: -90px;
+		}
+		z-index: 10;
+		position: relative;
+	}
+	ul {
+		margin-left: 0;
+		li {
+			list-style-type: none;
+		}
+	}
+}
+
+span {
+	display: block;
+}
+
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */

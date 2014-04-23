@@ -29,15 +29,15 @@
 				<ul>
 					<li><a href="/newjvw/">Home</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/attorneys">Attorneys</a></li>
+					<li><a href="/newjvw/about">About</a></li>
+					<li><a href="/newjvw/attorneys">Attorneys</a></li>
 				</ul>
 				<ul class="phonenumbers">
 					<li><a href="tel:6676670683"><span>Local callers</span> (208) 667-0683</a></li>
 					<li><a href="tel:8886670683"><span>Toll free line</span> (888) 667-0683</a></li>
 				</ul>
 			</nav>
-			<!-- <a class="logo" href="/"><img src="_/img/logo.png" alt=""> --><!-- <object type="image/svg+xml" data="assets/img/logo.svg" alt="Magnuson Hotels Logo"></object> --><!-- </a> -->
+			<!-- <a class="logo" href="/newjvw/"><img src="_/img/logo.png" alt=""> --><!-- <object type="image/svg+xml" data="assets/img/logo.svg" alt="Magnuson Hotels Logo"></object> --><!-- </a> -->
 
 		<section class="logos">
 			<div class="logotype"><img src="_/img/logotype-dark.png" alt=""></div>
@@ -47,51 +47,3 @@
 	</section>
 	<div class="fullwidthimg"></div>
 </header>
-
-<section class="row">
-	<button type="button" role="button" id="area-toggle">
-		Practice Areas
-	</button>
-	<ul class="area-collapse responsive-accordion responsive-accordion-default bm-larger">
-		<li>
-			<div class="responsive-accordion-head">Injuries<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
-			<div class="responsive-accordion-panel">
-				<ul>
-					<li><a href="/accidents">Auto <span>Accidents</span></a></li>
-					<li><a href="/drugs">Dangerous <span>Drugs</span></a></li>
-					<li><a href="/products">Dangerous <span>Products</span></a></li>
-					<li><a href="/malpractice">Medical <span>Malpractice</span></a></li>
-					<li><a href="/compensation">Workers <span>Compensation</span></a></li>
-				</ul>
-			</div>
-		</li>
-		<li>
-			<div class="responsive-accordion-head">Personal<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
-			<div class="responsive-accordion-panel">
-				<ul>
-					<li><a href="/bankruptcy">Filing for<span>Bankruptcy</span></a></li>
-					<li><a href="/defense">Criminal <span>Defense</span></a></li>
-					<li><a href="/family">Family <span>Law</span></a></li>
-					<li><a href="/planning">Wills, Estate Planning, <span>and Probate</span></a></li>
-				</ul>
-			</div>
-		</li>
-		<li>
-			<div class="responsive-accordion-head">Business<i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
-			<div class="responsive-accordion-panel">
-				<ul>
-					<li><a href="/business">Business and <span>Corporate Law</span></a></li>
-					<li><a href="/employment">Employment <span>Law</span></a></li>
-					<li><a href="/official">Municipal and <span>Administrative Law</span></a></li>
-					<li><a href="/reservation">Patents, Trademarks <span>and Copyrights</span></a></li>
-				</ul>
-			</div>
-		</li>
-		<li>
-			<a href="/real-estate"><div href="/real-estate" class="responsive-accordion-head">Real Estate</div></a>
-		</li>
-		<li>
-			<a href="/sexual-abuse"><div href="/sexual-abuse" class="responsive-accordion-head">Sexual Abuse</div></a>
-		</li>
-	</ul>
-</section>

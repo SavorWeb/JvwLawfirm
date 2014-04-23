@@ -19,7 +19,7 @@
 $a								: 300px;	// first viewport 
 $b								: 420px;	// up one
 $c								: 600px;	// up two
-$d								: 960px;	// up three
+$d								: 900px;	// up three
 $e								: 1100px;	// up four
 $f								: 1300px;	// up five
 $ie-fixed						: 980px;    // Viewport for IE fixed width
@@ -58,10 +58,10 @@ $secondary							: #4C2A2E;
 $body-color 						: #fff;
 $base-color							: $macy-grey;
 $heading-color						: $jack-black;
-$hightlight-color 					: $betty-blue;
+$hightlight-color 					: $secondary;
 
-$action								: $agent-orange;
-$action-respond						: $al-green;
+$action								: $secondary;
+$action-respond						: lighten($secondary, 25%);
 
 
 // ------------------------------------------------------------
@@ -73,11 +73,11 @@ $action-respond						: $al-green;
 // Eg. A h1 can be smaller visually, than a h4.
 $alpha   	: 42px;
 $beta		: 32px;
-$gamma		: 28px;
-$delta		: 26px;
-$epsilon	: 24px;
+$gamma		: 20px;
+$delta		: 25px;
+$epsilon	: 18px;
 $zeta		: 20px;
-$eta		: 18px;
+$eta		: 12px;
 $theta		: 15px;
 $iota 		: 14px;
 $kappa 		: 12px;
