@@ -185,6 +185,7 @@ section {
 			ul {
 				
 				li {
+					padding: 0;
 					float: left;
 					a {
 						padding: 10px 15px;
@@ -291,7 +292,8 @@ section {
 	background-color: $primary;
 	.contact-btn {		
 		clear: both;
-		padding: 25px 0;
+		padding-top: 25px;
+		padding-bottom: 25px;
 		@include clearfix;
 		img {
 			width: 100%;
