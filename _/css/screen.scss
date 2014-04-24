@@ -115,8 +115,11 @@ section {
 	}
 }
 
+.bottom-m {
+	margin-bottom: 0 !important;
+}
+
 .area-collapse {
-	border: 1px solid $secondary;
 	height: 0;
 	display: none;
 	margin-bottom: 35px;
@@ -126,7 +129,18 @@ section {
 	overflow: hidden;
 	-webkit-transition: all 0.35s ease;
 	transition: all 0.35s ease;
+	.responsive-accordion-head {
+		font-size: em-font(25px);
+		background-color: $secondary;
+		color: $light;
+	}
 	.responsive-accordion-panel {
+		ul {
+			li {
+				padding: 10px 20px;
+				background-color: $grey;
+			}
+		}
 		@extend .font-sans;
 		a {
 			color: $dark;
@@ -225,6 +239,7 @@ section {
 }
 
 .is-typeset {
+	padding-bottom: 50px;
 	img {
 		margin: 0 0 30px 0;
 		clear: both;
@@ -234,23 +249,23 @@ section {
 		float: right;
 		margin: 0 0 15px 30px;
 		@include break($b) {width: 40%;}
-		@include break($e) {
-			margin-right: -5%;
-		}
-		@include break($f) {
-			margin-right: -10%;
-		}
+		// @include break($e) {
+		// 	margin-right: -5%;
+		// }
+		// @include break($f) {
+		// 	margin-right: -10%;
+		// }
 	}
 	.left {
 		float: left;
 		margin: 0 30px 15px 0;
 		@include break($b) {width: 40%;}
-		@include break($e) {
-			margin-left: -5%;
-		}
-		@include break($f) {
-			margin-left: -10%;
-		}
+		// @include break($e) {
+		// 	margin-left: -5%;
+		// }
+		// @include break($f) {
+		// 	margin-left: -10%;
+		// }
 	}
 
 	blockquote {
@@ -346,6 +361,8 @@ section {
 		display: block;
 	}
 	h4 {
+		@extend .font-sans;
+		text-transform: uppercase;
 		text-align: center;
 		span {
 			display: block;

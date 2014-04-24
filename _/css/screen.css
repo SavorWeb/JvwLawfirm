@@ -235,6 +235,9 @@ header.pagehead .logos {
   margin: -85px auto 0;
   width: 200px;
 }
+.lt-ie9 header.pagehead .logos .logo a {
+  display: block;
+}
 @media screen and (min-width: 900px) {
   header.pagehead .logos {
     display: block;
@@ -252,6 +255,9 @@ header.pagehead .logos {
     position: relative;
     margin: -85px auto 0;
     width: 200px;
+  }
+  header.pagehead .logos .logo a {
+    display: block;
   }
 }
 
@@ -579,8 +585,11 @@ section {
   }
 }
 
+.bottom-m {
+  margin-bottom: 0 !important;
+}
+
 .area-collapse {
-  border: 1px solid #4c2a2e;
   height: 0;
   display: none;
   margin-bottom: 35px;
@@ -590,6 +599,15 @@ section {
 }
 .area-collapse.marginbottom {
   margin-bottom: 80px;
+}
+.area-collapse .responsive-accordion-head {
+  font-size: 1.5625em;
+  background-color: #4c2a2e;
+  color: white;
+}
+.area-collapse .responsive-accordion-panel ul li {
+  padding: 10px 20px;
+  background-color: #e6e6e6;
 }
 .area-collapse .responsive-accordion-panel a {
   color: black;
@@ -746,6 +764,9 @@ section {
   height: auto !important;
 }
 
+.is-typeset {
+  padding-bottom: 50px;
+}
 .is-typeset img {
   margin: 0 0 30px 0;
   clear: both;
@@ -763,22 +784,6 @@ section {
     width: 40%;
   }
 }
-.lt-ie9 .is-typeset .right {
-  margin-right: -5%;
-}
-@media screen and (min-width: 1100px) {
-  .is-typeset .right {
-    margin-right: -5%;
-  }
-}
-.lt-ie9 .is-typeset .right {
-  margin-right: -10%;
-}
-@media screen and (min-width: 1300px) {
-  .is-typeset .right {
-    margin-right: -10%;
-  }
-}
 .is-typeset .left {
   float: left;
   margin: 0 30px 15px 0;
@@ -789,22 +794,6 @@ section {
 @media screen and (min-width: 420px) {
   .is-typeset .left {
     width: 40%;
-  }
-}
-.lt-ie9 .is-typeset .left {
-  margin-left: -5%;
-}
-@media screen and (min-width: 1100px) {
-  .is-typeset .left {
-    margin-left: -5%;
-  }
-}
-.lt-ie9 .is-typeset .left {
-  margin-left: -10%;
-}
-@media screen and (min-width: 1300px) {
-  .is-typeset .left {
-    margin-left: -10%;
   }
 }
 .is-typeset blockquote {
@@ -903,6 +892,7 @@ section {
   display: block;
 }
 .gallery h4 {
+  text-transform: uppercase;
   text-align: center;
 }
 .gallery h4 span {
@@ -976,7 +966,7 @@ span {
   font-family: 'Garamond', 'Adobe Garamond', Garamond, Times, serif;
 }
 
-.font-sans, header.pagehead .nav-collapse ul li a, .area-collapse .responsive-accordion-panel, .credit small, .btn, .as-heading__large, .is-typeset h2, .as-heading__normal, .is-typeset h4, .as-heading__smallest, .is-typeset h6 {
+.font-sans, header.pagehead .nav-collapse ul li a, .area-collapse .responsive-accordion-panel, .credit small, .btn, .gallery h4, .as-heading__large, .is-typeset h2, .as-heading__normal, .is-typeset h4, .as-heading__smallest, .is-typeset h6 {
   font-family: 'Gotham', arial, sans-serif;
 }
 

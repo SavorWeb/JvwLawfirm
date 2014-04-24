@@ -117,6 +117,7 @@
 		$(document).ready(function(){
 			$('#area-toggle').on('click', function(){
 				$('.area-collapse').toggleClass('open-p');
+				$(this).toggleClass('bottom-m');
 			});
 			$('#contact-toggle').on('click', function(){
 				$('#contact').toggleClass('open-p');

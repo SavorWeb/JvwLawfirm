@@ -42,7 +42,7 @@
 		<section class="logos">
 			<div class="logotype"><img src="_/img/logotype-dark.png" alt=""></div>
 			<div class="slogan"><img src="_/img/slogan.png" alt=""></div>
-			<div class="logo"><img src="_/img/logo.png" alt=""></div>
+			<div class="logo"><a href="/newjvw/"><img src="_/img/logo.png" alt=""></a></div>
 		</section>
 	</section>
 	<div class="fullwidthimg"></div>
