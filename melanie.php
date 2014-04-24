@@ -2,7 +2,7 @@
 
 <section class="row">
 	<div id="sidebar" class="is-typeset editable colspan12-3 colspan6-2 colspan2-2 as-grid">
-		<img src="_/media/photos/attorney/melanie.jpg" alt="">
+		<img src="media/photos/attorney/melanie.jpg" alt="">
 		<h2>Contact</h2>
 		<p>Local Callers <span>(208) 667-0683</span></p>
 		<p>Toll free line <span>(888) 667-0683</span></p>

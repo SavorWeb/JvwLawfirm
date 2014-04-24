@@ -25,43 +25,43 @@ Let us put our experience to work for you. To learn more about our legal team, p
 <div id="attorney-photos" class="gallery row__colspaced editable">
 
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/craig">
-			<img src="_/media/photos/attorney/craig.jpg" alt="">
+			<img src="media/photos/attorney/craig.jpg" alt="">
 			<h4>Craig K. <span>Vernon</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/cynthia">
-			<img src="_/media/photos/attorney/cynthia.jpg" alt="">
+			<img src="media/photos/attorney/cynthia.jpg" alt="">
 			<h4>Cynthia K.C. <span>Meyer</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/dana">
-			<img src="_/media/photos/attorney/dana.jpg" alt="">
+			<img src="media/photos/attorney/dana.jpg" alt="">
 			<h4>Dana L. <span>Wetzel</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/douglas">
-			<img src="_/media/photos/attorney/douglas.jpg" alt="">
+			<img src="media/photos/attorney/douglas.jpg" alt="">
 			<h4>Douglas A. <span>Pierce</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/leander">
-			<img src="_/media/photos/attorney/leander.jpg" alt="">
+			<img src="media/photos/attorney/leander.jpg" alt="">
 			<h4>Leander L. <span>James IV</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/melanie">
-			<img src="_/media/photos/attorney/melanie.jpg" alt="">
+			<img src="media/photos/attorney/melanie.jpg" alt="">
 			<h4>Melanie E. <span>Baillie</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/stephen">
-			<img src="_/media/photos/attorney/stephen.jpg" alt="">
+			<img src="media/photos/attorney/stephen.jpg" alt="">
 			<h4>Stephen J. <span>Nemec</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/steven">
-			<img src="_/media/photos/attorney/steven.jpg" alt="">
+			<img src="media/photos/attorney/steven.jpg" alt="">
 			<h4>Steven C. <span>Wetzel</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/susan">
-			<img src="_/media/photos/attorney/susan.jpg" alt="">
+			<img src="media/photos/attorney/susan.jpg" alt="">
 			<h4>Susan P. <span>Weeks</span></h4>
 		</a></div>
 	<div class="repeatable colspan12-3 colspan8-2 colspan2-1 as-grid with-gutter"><a href="/newjvw/wes">
-			<img src="_/media/photos/attorney/wes.jpg" alt="">
+			<img src="media/photos/attorney/wes.jpg" alt="">
 			<h4>Wes <span>Larsen</span></h4>
 		</a></div>
 
