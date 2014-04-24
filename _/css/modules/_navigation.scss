@@ -124,7 +124,10 @@ header.pagehead {
 			position: relative;
 			height: 80px;
 			padding: 25px 0;
-			.logotype {float: left;}
+			.logotype {float: left;
+							a {
+					display: block;
+				}}
 			.slogan {float: right;}
 			.logo {
 				position: relative;

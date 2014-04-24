@@ -227,6 +227,9 @@ header.pagehead .logos {
 .lt-ie9 header.pagehead .logos .logotype {
   float: left;
 }
+.lt-ie9 header.pagehead .logos .logotype a {
+  display: block;
+}
 .lt-ie9 header.pagehead .logos .slogan {
   float: right;
 }
@@ -247,6 +250,9 @@ header.pagehead .logos {
   }
   header.pagehead .logos .logotype {
     float: left;
+  }
+  header.pagehead .logos .logotype a {
+    display: block;
   }
   header.pagehead .logos .slogan {
     float: right;
@@ -546,11 +552,11 @@ section {
 
 .fullwidthimg {
   height: 150px;
-  background: url(../img/cdafall.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url(../img/cdafall.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
 }
 .lt-ie9 .fullwidthimg {
   height: 300px;
@@ -558,6 +564,24 @@ section {
 @media screen and (min-width: 900px) {
   .fullwidthimg {
     height: 300px;
+  }
+}
+.lt-ie9 .fullwidthimg {
+  background-attachment: fixed;
+  background-position: center -150px;
+}
+@media screen and (min-width: 600px) {
+  .fullwidthimg {
+    background-attachment: fixed;
+    background-position: center -150px;
+  }
+}
+.lt-ie9 .fullwidthimg {
+  background-position: center -250px;
+}
+@media screen and (min-width: 1100px) {
+  .fullwidthimg {
+    background-position: center -250px;
   }
 }
 
@@ -938,6 +962,11 @@ section {
   padding-left: 3%;
 }
 
+.clear-sides {
+  display: block;
+  clear: both;
+}
+
 #sidebar {
   background-color: #e6e6e6;
   margin-bottom: 100px;
@@ -947,6 +976,7 @@ section {
 .lt-ie9 #sidebar {
   margin-bottom: 0;
   padding: 0 40px;
+  position: relative;
 }
 .lt-ie9 #sidebar:before {
   content: "";
@@ -961,6 +991,7 @@ section {
   #sidebar {
     margin-bottom: 0;
     padding: 0 40px;
+    position: relative;
   }
   #sidebar:before {
     content: "";

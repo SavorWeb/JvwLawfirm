@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="initial-scale=1, user-scalable=no">
-	<meta name="description" content="..." />
+	<meta name="description" content="James, Vernon, & Weeks, P.A. Helping People Solve Problems" />
 	<meta name="keywords" content="..." />
 
-	<title>Site Title</title>
+	<title>James, Vernon, & Weeks, P.A.</title>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="_/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>		
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
@@ -20,7 +20,7 @@
 	<header class="pagehead pullwidth">
 		<section class="row">
 			<div class="navtop">
-				<img class="white-logo" src="_/img/logotype.png" alt="">
+				<a href="/newjvw/"><img class="white-logo" src="_/img/logotype.png" alt=""></a>
 
 				<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 			</div>
@@ -40,7 +40,7 @@
 			<!-- <a class="logo" href="/newjvw/"><img src="_/img/logo.png" alt=""> --><!-- <object type="image/svg+xml" data="assets/img/logo.svg" alt="Magnuson Hotels Logo"></object> --><!-- </a> -->
 
 		<section class="logos">
-			<div class="logotype"><img src="_/img/logotype-dark.png" alt=""></div>
+			<div class="logotype"><a href="/newjvw/"><img src="_/img/logotype-dark.png" alt=""></a></div>
 			<div class="slogan"><img src="_/img/slogan.png" alt=""></div>
 			<div class="logo"><a href="/newjvw/"><img src="_/img/logo.png" alt=""></a></div>
 		</section>

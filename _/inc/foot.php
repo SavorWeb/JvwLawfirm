@@ -32,15 +32,24 @@
 					</div>
 			        
 						<button name="submit" type="submit" class="btn subbutton">Send Email</button>
+						<p>I verify to have read the <a href="privacy">disclaimer and privacy policy</a>.</p>
 						<input type="hidden" name="submitted" id="submitted" value="true" />
 				</form>
 		</div>
 		<div id="find-us" class="editable colspan12-6 colspan6-3 colspan2-2 as-grid with-gutter">
 			<h3>Find Us</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, numquam, accusamus sapiente totam quas ratione vitae quos quisquam odio modi facilis nobis minima praesentium laborum harum! Eveniet, sit eos nostrum.</p>
+			<p>We are located in Coeur d'Alene, Idaho. To schedule a consultation with an attorney at our firm, call (208) 667-0683 or contact us toll free at (888) 667-0683. To contact us by e-mail, please fill out the contact form on this page.</p>
 			<h4>Our Mailing Address</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<a href="#" class="btn">Get Directions</a>
+			<p>
+			<b>James, Vernon & Weeks, P.A.</b>
+				<br>
+				1626 Lincoln Way <br>
+				Coeur d'Alene, ID 83814<br>
+				Phone: (208) 667-0683<br>
+				Toll Free: (888) 667-0683<br>
+				Fax: (208) 664-1684
+			</p>
+			<a target="_blank" href="https://www.google.com/maps/dir//1626+Lincoln+Way,+Coeur+d'Alene,+ID+83814/@47.6905279,-116.7957285,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x5361c6eb0243a3e9:0x3ee29c8a8f9cb4d2!2m2!1d-116.791437!2d47.690528" class="btn">Get Directions</a>
 		</div>
 	</div>	
 </div>

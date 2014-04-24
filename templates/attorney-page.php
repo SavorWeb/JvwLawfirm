@@ -1,11 +1,11 @@
 <?php include("_/inc/head.php"); ?>
 
 <section class="row">
-	<div id="sidebar" class="is-typeset editable colspan12-2 colspan6-2 colspan2-2 as-grid">
-		<img src="http://placehold.it/300x300" alt="">
+	<div id="sidebar" class="is-typeset editable colspan12-3 colspan6-2 colspan2-2 as-grid">
+		<img src="http://placehold.it/600x600" alt="">
 		<h2>Contact</h2>
-		<p>Local Callers <span>(208) 667-0683</span></p>
-		<p>Toll free line <span>(888) 667-0683</span></p>
+		<p>Local Callers <span class="clear-sides">(208) 667-0683</span></p>
+		<p>Toll free line <span class="clear-sides">(888) 667-0683</span></p>
 		<hr>
 		<h2>Practice Areas</h2>
 		<ul>
@@ -19,16 +19,20 @@
 		<hr>
 		<h2>Other Attorneys</h2>
 		<ul>
-			<li>Name andLast</li>
-			<li>Name andLast</li>
-			<li>Name andLast</li>
-			<li>Name andLast</li>
-			<li>Name andLast</li>
-			<li>Name andLast</li>
+			<li><a href="/newjvw/craig">Craig K. Vernon</a></li>
+			<li><a href="/newjvw/cynthia">Cynthia K.C. Meyer</a></li>
+			<li><a href="/newjvw/dana">Dana L. Wetzel</a></li>
+			<li><a href="/newjvw/douglas">Douglas A. Pierce</a></li>
+			<li><a href="/newjvw/leander">Leander L. James</a></li>
+			<li><a href="/newjvw/melanie">Melanie E. Baillie</a></li>
+			<li><a href="/newjvw/stephen">Stephen J. Nemec</a></li>
+			<li><a href="/newjvw/steven">Steven C. Wetzel</a></li>
+			<li><a href="/newjvw/susan">Susan P. Weeks</a></li>
+			<li><a href="/newjvw/wes">Wes Larsen</a></li>
 		</ul>
 	</div>
 
-	<div id="information" class="is-typeset editable colspan12-10 colspan6-4 colspan2-2 as-grid with-gutter">
+	<div id="information" class="is-typeset editable colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">
 
 	<h1 class="headline">Name andLast</h1>
 

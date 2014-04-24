@@ -86,11 +86,22 @@ section {
 	@include break($d) {
 		height: 300px;
 	}
-	background: url(../img/cdafall.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-image: url(../img/cdafall.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	@include break($c) {
+		background-attachment: fixed;		
+		background-position: center -150px;		
+	}
+	@include break($e) {
+		background-position: center -250px;		
+	}
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
 }
 
 // second nav
@@ -410,6 +421,11 @@ section {
 	}
 }
 
+.clear-sides {
+	display: block;
+	clear: both;
+}
+
 #sidebar {
 	background-color: $grey;
 	margin-bottom: 100px;
@@ -417,6 +433,7 @@ section {
 	@include break($c) {
 		margin-bottom: 0;
 		padding: 0 40px;
+		position: relative;
 		&:before {
 			content: "";
 			position: absolute;
