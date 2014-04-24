@@ -124,6 +124,16 @@
 			});			
 		});
 		</script>
+		<script>
+		   $(function() {
+
+		      $('.gallery div img').each(function(n) {
+		        n += 1;
+		        $(this).wrap('<figure class="tint t'+ n + '"></figure>');
+		      });
+
+		    });
+		</script>
 		<script src="_/js/script.min.js"></script>
 
 	</body>

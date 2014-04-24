@@ -355,19 +355,53 @@ section {
 	div {
 		margin-bottom: 15px;
 	}
-	img {
-		border-radius: 500px;
-		margin-bottom: 10px;
-	}
 	a {
 		display: block;
+		.tint {
+			border-radius: 500px;
+			position: relative;
+			overflow: hidden;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			img {
+				margin-bottom: -2px;
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: grayscale(100%);		
+			}
+			&:before {
+				background: rgba(0,0,160, 0.5);
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 5;
+			}
+		}
+
+		&:hover .tint img {
+			-webkit-filter: grayscale(0%);
+			-moz-filter: grayscale(0%);
+			filter: grayscale(0%);
+		}
+		&:hover .tint:before {
+			background: transparent;
+		}
 	}
+
 	h4 {
 		@extend .font-sans;
 		text-transform: uppercase;
 		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 20px;
 		span {
 			display: block;
+			font-weight: bold;
+			font-size: em-font(20px);
+			margin-top: -5px;
 		}
 	}
 	.colspan2-1 {
@@ -379,8 +413,10 @@ section {
 #sidebar {
 	background-color: $grey;
 	margin-bottom: 100px;
+	padding: 0 20px;
 	@include break($c) {
 		margin-bottom: 0;
+		padding: 0 40px;
 		&:before {
 			content: "";
 			position: absolute;
@@ -406,6 +442,10 @@ section {
 		margin-left: 0;
 		li {
 			list-style-type: none;
+			a {
+				z-index: 10;
+				position: relative;
+			}
 		}
 	}
 }

@@ -887,19 +887,51 @@ section {
 .gallery div {
   margin-bottom: 15px;
 }
-.gallery img {
-  border-radius: 500px;
-  margin-bottom: 10px;
-}
 .gallery a {
   display: block;
+}
+.gallery a .tint {
+  border-radius: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.gallery a .tint img {
+  margin-bottom: -2px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.gallery a .tint:before {
+  background: rgba(0, 0, 160, 0.5);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.gallery a:hover .tint img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.gallery a:hover .tint:before {
+  background: transparent;
 }
 .gallery h4 {
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .gallery h4 span {
   display: block;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-top: -5px;
 }
 .gallery .colspan2-1 {
   width: 50%;
@@ -909,10 +941,12 @@ section {
 #sidebar {
   background-color: #e6e6e6;
   margin-bottom: 100px;
+  padding: 0 20px;
   text-align: center;
 }
 .lt-ie9 #sidebar {
   margin-bottom: 0;
+  padding: 0 40px;
 }
 .lt-ie9 #sidebar:before {
   content: "";
@@ -926,6 +960,7 @@ section {
 @media screen and (min-width: 600px) {
   #sidebar {
     margin-bottom: 0;
+    padding: 0 40px;
   }
   #sidebar:before {
     content: "";
@@ -957,6 +992,10 @@ section {
 }
 #sidebar ul li {
   list-style-type: none;
+}
+#sidebar ul li a {
+  z-index: 10;
+  position: relative;
 }
 
 span {
