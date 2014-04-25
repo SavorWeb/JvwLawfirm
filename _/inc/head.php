@@ -19,17 +19,17 @@
 	<header class="pagehead pullwidth">
 		<section class="row">
 			<div class="navtop">
-				<a href="/newjvw/"><img class="white-logo" src="_/img/logotype.png" alt=""></a>
+				<a href="/"><img class="white-logo" src="_/img/logotype.png" alt=""></a>
 
 				<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 			</div>
 
 			<nav class="nav-collapse">
 				<ul>
-					<li><a href="/newjvw/">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="/newjvw/about">About</a></li>
-					<li><a href="/newjvw/attorneys">Attorneys</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/attorneys">Attorneys</a></li>
 				</ul>
 				<ul class="phonenumbers">
 					<li><a href="tel:6676670683"><span>Local callers</span> (208) 667-0683</a></li>
@@ -38,9 +38,9 @@
 			</nav>
 
 		<section class="logos">
-			<div class="logotype"><a href="/newjvw/"><img src="_/img/logotype-dark.png" alt=""></a></div>
+			<div class="logotype"><a href="/"><img src="_/img/logotype-dark.png" alt=""></a></div>
 			<div class="slogan"><img src="_/img/slogan.png" alt=""></div>
-			<div class="logo"><a href="/newjvw/"><img src="_/img/logo.png" alt=""></a></div>
+			<div class="logo"><a href="/"><img src="_/img/logo.png" alt=""></a></div>
 		</section>
 	</section>
 	<div class="fullwidthimg"></div>
