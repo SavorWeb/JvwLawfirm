@@ -16,20 +16,7 @@
 			<li>Areas here</li>
 			<li>Areas here</li>
 		</ul>
-		<hr>
-		<h2>Other Attorneys</h2>
-		<ul>
-			<li><a href="/newjvw/craig">Craig K. Vernon</a></li>
-			<li><a href="/newjvw/cynthia">Cynthia K.C. Meyer</a></li>
-			<li><a href="/newjvw/dana">Dana L. Wetzel</a></li>
-			<li><a href="/newjvw/douglas">Douglas A. Pierce</a></li>
-			<li><a href="/newjvw/leander">Leander L. James</a></li>
-			<li><a href="/newjvw/melanie">Melanie E. Baillie</a></li>
-			<li><a href="/newjvw/stephen">Stephen J. Nemec</a></li>
-			<li><a href="/newjvw/steven">Steven C. Wetzel</a></li>
-			<li><a href="/newjvw/susan">Susan P. Weeks</a></li>
-			<li><a href="/newjvw/wes">Wes Larsen</a></li>
-		</ul>
+	<?php include("_/inc/other-attorneys.php"); ?>
 	</div>
 
 	<div id="information" class="is-typeset editable colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">

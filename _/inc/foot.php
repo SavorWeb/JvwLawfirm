@@ -1,6 +1,6 @@
 <div id="contact">
 	<div class="row is-typeset">
-		<div class="colspan12-6 colspan6-3 colspan2-2 as-grid">
+		<div class="contact-form-block colspan12-6 colspan6-3 colspan2-2 as-grid">
 				<h3>Contact Us</h3>
 			<?php if(isset($hasError) || isset($captchaError) ) { ?>
 			        <p class="alert">Error submitting the form</p>
@@ -68,7 +68,7 @@
 	</div>
 </footer>
 	<div id="credit" class="editable row credit">
-		<small>© 2014 by James, Vernon, & Weeks, P.A. All Rights Reserved.</small>
+		<small>© 2014 by James, Vernon, & Weeks, P.A. <span>All Rights Reserved.</span></small>
 		<hr>
 	</div>
 
