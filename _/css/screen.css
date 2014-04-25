@@ -617,9 +617,21 @@ section {
   height: 0;
   display: none;
   margin-bottom: 35px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  list-style-type: none;
+  list-style-position: inside;
   overflow: hidden;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
+}
+.area-collapse li {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  list-style-type: none;
+  list-style-position: inside;
 }
 .area-collapse.marginbottom {
   margin-bottom: 80px;

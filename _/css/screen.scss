@@ -134,6 +134,22 @@ section {
 	height: 0;
 	display: none;
 	margin-bottom: 35px;
+
+	//cancel for ie
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	margin-top: 0 !important;
+	list-style-type: none;
+	list-style-position: inside;
+
+	li {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	margin-top: 0 !important;
+	list-style-type: none;
+	list-style-position: inside;		
+	}
+
 	&.marginbottom {
 		margin-bottom: 80px;
 	}
