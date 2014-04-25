@@ -346,7 +346,9 @@ section {
 				// width: 40%;
 			}
 		}
-		button {
+		a {
+			text-align: center;
+			@extend .font-sans;
 			font-size: em-font(20px);
 			letter-spacing: 2px;
 			text-transform: uppercase;

@@ -63,6 +63,21 @@ input, textarea {
 	margin: 3px 0;
 }
 
+.formblock span {
+	background-color: $secondary;
+	color: $light;
+	@extend .font-sans;
+	text-transform: uppercase;
+	padding: 3px 5px;
+	margin-top: -3px;
+	margin-bottom: 3px;
+	font-size: em-font(10px);
+}
+
+.clear {
+	clear: both;
+}
+
 #contact {
 	button {
 		margin: 0;
