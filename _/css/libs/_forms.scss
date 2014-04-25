@@ -51,8 +51,16 @@ input[type="checkbox"]:focus {
 	outline-offset: -2px;
 }
 
+label {
+	@extend .font-sans;
+	text-transform: uppercase;
+}
+
 input, textarea {
 	width: 100%;
+	padding: 10px;
+	border: none;
+	margin: 3px 0;
 }
 
 #contact {

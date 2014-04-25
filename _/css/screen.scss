@@ -232,7 +232,7 @@ section {
 	background-color: $grey;
 	padding: 20px 0 20px;
 	position: relative;
-
+	
 	@include break($c) {
 		padding-top: 60px;
 		padding-bottom: 45px;
@@ -248,6 +248,16 @@ section {
 			left: 47%;
 			border-radius: 500px;
 		}
+	}
+	button {
+		float: left;
+	}
+	small {
+		float: right;
+		margin-top: 22px;
+		@extend .font-sans;
+		text-transform: uppercase;
+		font-size: em-font(11px);
 	}
 }
 

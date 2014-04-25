@@ -32,7 +32,7 @@
 					</div>
 			        
 						<button name="submit" type="submit" class="btn subbutton">Send Email</button>
-						<p>I verify to have read the <a href="privacy">disclaimer and privacy policy</a>.</p>
+						<small>I have read the <a href="privacy">disclaimer and privacy policy</a>.</small>
 						<input type="hidden" name="submitted" id="submitted" value="true" />
 				</form>
 		</div>
