@@ -10,20 +10,7 @@
 <li><span style="color: #263645; font-family: Gotham, arial, sans-serif; font-size: 1.25em; line-height: 1.32em; text-transform: uppercase; display: inline !important;">Practice Areas</span></li>
 <li>70% Real Estate<br>20% Corporations<br>10% Land Use Planning</li>
 </ul>
-<hr>
-<h2>Other Attorneys</h2>
-<ul>
-<li><a href="craig">Craig K. Vernon</a></li>
-<li><a href="cynthia">Cynthia K.C. Meyer</a></li>
-<li><a href="dana">Dana L. Wetzel</a></li>
-<li><a href="douglas">Douglas A. Pierce</a></li>
-<li><a href="leander">Leander L. James</a></li>
-<li><a href="melanie">Melanie E. Baillie</a></li>
-<li><a href="stephen">Stephen J. Nemec</a></li>
-<li><a href="steven">Steven C. Wetzel</a></li>
-<li><a href="susan">Susan P. Weeks</a></li>
-<li><a href="wes">Wes Larsen</a></li>
-</ul></div>
+<?php include("_/inc/other-attorneys.php"); ?></div>
 
 	<div id="information" class="is-typeset editable colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter"><h1 class=" headline">Steven C. Wetzel</h1>
 <h2>Of Counsel</h2>
@@ -32,36 +19,36 @@
 <p>20% of Practice Devoted to Litigation</p>
 <h2>Bar Admissions</h2>
 <ul>
-<li><span style="display: inline !important;">Idaho, 1982</span></li>
-<li><span style="display: inline !important;">U.S. District Court District of Idaho, 1982</span></li>
+<li><span >Idaho, 1982</span></li>
+<li><span >U.S. District Court District of Idaho, 1982</span></li>
 </ul>
 <h2>Education</h2>
 <p><strong>University of Idaho College of Law, Moscow, Idaho</strong></p>
 <ul>
-<li><span style="display: inline !important;">J.D.</span></li>
+<li><span >J.D.</span></li>
 </ul>
 <p><strong>Idaho State University, Pocatello, Idaho</strong></p>
 <ul>
-<li><span style="display: inline !important;">B.A.summa cum laude</span></li>
-<li><span style="display: inline !important;">Major: Political Science</span></li>
+<li><span >B.A.summa cum laude</span></li>
+<li><span >Major: Political Science</span></li>
 </ul>
 <p><strong>Representative Clients</strong></p>
 <ul>
-<li><span style="display: inline !important;">A.C.I.</span></li>
-<li><span style="display: inline !important;">North Idaho Resorts</span></li>
+<li><span >A.C.I.</span></li>
+<li><span >North Idaho Resorts</span></li>
 </ul>
 <h2>Professional Associations and Memberships</h2>
 <ul>
-<li><span style="display: inline !important;">Coeur d'Alene Rotary Club, 1992 - 2012</span></li>
-<li><span style="display: inline !important;">Panhandle Park Foundation, President, 2009 - 2011</span></li>
-<li><span style="display: inline !important;">Panhandle Park Foundation, Member, 2012</span></li>
-<li><span style="display: inline !important;">Kootenai County, First Judicial District, Member, 1982 - 2012</span></li>
-<li><span style="display: inline !important;">Urban Land Institute, Member, 2007 - 2010</span></li>
+<li><span >Coeur d'Alene Rotary Club, 1992 - 2012</span></li>
+<li><span >Panhandle Park Foundation, President, 2009 - 2011</span></li>
+<li><span >Panhandle Park Foundation, Member, 2012</span></li>
+<li><span >Kootenai County, First Judicial District, Member, 1982 - 2012</span></li>
+<li><span >Urban Land Institute, Member, 2007 - 2010</span></li>
 </ul>
 <h2>Past Employment Positions</h2>
 <ul>
-<li><span style="display: inline !important;">Wetzel, Wetzel &amp; Holt PLLC, Managing Member, 2009 - 2011</span></li>
-<li><span style="display: inline !important;">Wetzel &amp; Wetzel PLLC, 1999 - 2009</span></li>
+<li><span >Wetzel, Wetzel &amp; Holt PLLC, Managing Member, 2009 - 2011</span></li>
+<li><span >Wetzel &amp; Wetzel PLLC, 1999 - 2009</span></li>
 </ul></div>
 </section>
 

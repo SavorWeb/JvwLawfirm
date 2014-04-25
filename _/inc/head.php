@@ -7,13 +7,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="initial-scale=1, user-scalable=no">
 	<meta name="description" content="James, Vernon, & Weeks, P.A. Helping People Solve Problems" />
-	<meta name="keywords" content="..." />
+	<meta name="keywords" content="Attorneys at Law, Law Assistance, Injuries, Personal, Business, Real Estate, Sexual Abuse, Helping People Solve Problems, Coeur d'Alene, Idaho" />
 
 	<title>James, Vernon, & Weeks, P.A.</title>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="_/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>		
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-	<!-- TODO: Download a custom build of modernizer to suit the project -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 </head>
 <body>
@@ -37,7 +36,6 @@
 					<li><a href="tel:8886670683"><span>Toll free line</span> (888) 667-0683</a></li>
 				</ul>
 			</nav>
-			<!-- <a class="logo" href="/newjvw/"><img src="_/img/logo.png" alt=""> --><!-- <object type="image/svg+xml" data="assets/img/logo.svg" alt="Magnuson Hotels Logo"></object> --><!-- </a> -->
 
 		<section class="logos">
 			<div class="logotype"><a href="/newjvw/"><img src="_/img/logotype-dark.png" alt=""></a></div>

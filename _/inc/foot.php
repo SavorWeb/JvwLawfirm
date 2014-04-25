@@ -7,7 +7,7 @@
 			    <?php } ?>
 		
 				<form id="contact-us" action="contact-submit.php" method="post">
-					<div class="formblock">
+					<div class="colspan12-6 colspan6-6 colspan2-2 as-grid formblock">
 						<label class="screen-reader-text">Name</label>
 						<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="txt requiredField" placeholder="Name:" />
 						<?php if($nameError != '') { ?>
@@ -15,7 +15,7 @@
 						<?php } ?>
 					</div>
 			        
-					<div class="formblock">
+					<div class="colspan12-6 colspan6-6 colspan2-2 as-grid with-gutter formblock">
 						<label class="screen-reader-text">Email</label>
 						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="txt requiredField email" placeholder="Email:" />
 						<?php if($emailError != '') { ?>

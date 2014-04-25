@@ -86,7 +86,7 @@ section {
 	@include break($d) {
 		height: 300px;
 	}
-	background-image: url(../img/cdafall.jpg);
+	background-image: url(../img/fallriver.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100%;
@@ -148,6 +148,9 @@ section {
 	.responsive-accordion-panel {
 		ul {
 			li {
+				&:nth-of-type(even) {
+					background-color: lighten($grey, 6%);
+				}
 				padding: 10px 20px;
 				background-color: $grey;
 			}
@@ -198,6 +201,9 @@ section {
 				li {
 					padding: 0;
 					float: left;
+					&:nth-of-type(even) {
+						background-color: $grey;
+					}
 					a {
 						padding: 10px 15px;
 						display: block;
@@ -253,14 +259,25 @@ section {
 .is-typeset {
 	padding-bottom: 50px;
 	img {
+		width: 100%;
+		margin: 0 0 15px 30px;
+		height: auto;
+		@include break($b) {
+			float: right;
+			width: 40%;
+		}
+	}
+	.full-width {
 		margin: 0 0 30px 0;
 		clear: both;
 		width: 100%;
 	}
 	.right {
-		float: right;
 		margin: 0 0 15px 30px;
-		@include break($b) {width: 40%;}
+		@include break($b) {
+			float: right;
+			width: 40%;
+		}
 		// @include break($e) {
 		// 	margin-right: -5%;
 		// }
@@ -269,9 +286,11 @@ section {
 		// }
 	}
 	.left {
-		float: left;
 		margin: 0 30px 15px 0;
-		@include break($b) {width: 40%;}
+		@include break($b) {
+			float: left;
+			width: 40%;
+		}
 		// @include break($e) {
 		// 	margin-left: -5%;
 		// }
@@ -363,6 +382,11 @@ section {
 .gallery {
 	margin-bottom: 50px;
 	@include clearfix; 
+	@include break($d) {
+		.colspan12-3 {
+			width: 20% !important;
+		}
+	}
 	div {
 		margin-bottom: 15px;
 	}
@@ -381,7 +405,7 @@ section {
 				filter: grayscale(100%);		
 			}
 			&:before {
-				background: rgba(0,0,160, 0.5);
+				background: rgba(71, 71, 136, 0.5);
 				content: "";
 				position: absolute;
 				top: 0;
@@ -430,6 +454,7 @@ section {
 	background-color: $grey;
 	margin-bottom: 100px;
 	padding: 0 20px;
+
 	@include break($c) {
 		margin-bottom: 0;
 		padding: 0 40px;
@@ -439,7 +464,7 @@ section {
 			position: absolute;
 			top: 0;
 			bottom: 0;
-			left: -9955px;
+			left: -9993px;
 			right: 0;
 			border-left: 9999px solid $grey;
 		}
@@ -449,14 +474,26 @@ section {
 		border-radius: 500px;
 		margin-top: -110px;
 		max-width: 200px;
+		margin-left: 0;
+		margin-right: 0;
+		float: none;
+		width: 100%;
+		height: auto;
 		@include break($c) {
 			margin-top: -90px;
+			margin-bottom: 0;
 		}
 		z-index: 10;
 		position: relative;
 	}
 	ul {
 		margin-left: 0;
+		&:first-of-type {
+			li:nth-of-type(even) {
+				background-color: lighten($grey, 5%);
+				padding: 5px;
+			}
+		}
 		li {
 			list-style-type: none;
 			a {

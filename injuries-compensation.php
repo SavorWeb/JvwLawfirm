@@ -4,19 +4,19 @@
 
 <section id="basic-page" class="row is-typeset editable"><h1>Coeur d'Alene Workers' Compensation Lawyers</h1>
 <h2>Kootenai County Work Injury Attorneys</h2>
-<p>Workers' compensation provides wage and medical benefits to workers who have sustained a work-related injury or illness. Workers' compensation is an insurance-based system and workers are not required to show that their employer was negligent in order to obtain benefits. Injured workers may receive benefits in a variety of circumstances:</p>
+<p><img class=" right" src="media/photos/workcomp.jpg" alt="" width="" height="">Workers' compensation provides wage and medical benefits to workers who have sustained a work-related injury or illness. Workers' compensation is an insurance-based system and workers are not required to show that their employer was negligent in order to obtain benefits. Injured workers may receive benefits in a variety of circumstances:</p>
 <ul>
-<li><span style="display: inline !important;">Back injuries</span></li>
-<li><span style="display: inline !important;">Shoulder injuries</span></li>
-<li><span style="display: inline !important;">Paraplegia</span></li>
-<li><span style="display: inline !important;">Amputations</span></li>
-<li><span style="display: inline !important;">Occupational disease claims</span></li>
-<li><span style="display: inline !important;">Permanent impairment and disability</span></li>
-<li><span style="display: inline !important;">Retraining</span></li>
-<li><span style="display: inline !important;">Repetitive stress injuries</span></li>
-<li><span style="display: inline !important;">Aggravation of a pre-existing condition</span></li>
-<li><span style="display: inline !important;">Injuries from performance of work duties (e.g., injured back, knee or shoulder)</span></li>
-<li><span style="display: inline !important;">Other work-related accident injuries</span></li>
+<li>Back injuries</li>
+<li>Shoulder injuries</li>
+<li>Paraplegia</li>
+<li>Amputations</li>
+<li>Occupational disease claims</li>
+<li>Permanent impairment and disability</li>
+<li>Retraining</li>
+<li>Repetitive stress injuries</li>
+<li>Aggravation of a pre-existing condition</li>
+<li>Injuries from performance of work duties (e.g., injured back, knee or shoulder)</li>
+<li>Other work-related accident injuries</li>
 </ul>
 <p>If you have sustained a work-related injury or illness, contact an experienced workers' compensation lawyer at James, Vernon &amp; Weeks, P.A. For assistance, contact our law office in Coeur d'Alene, Idaho.</p>
 <h2>Put Our Experience to Work for You</h2>

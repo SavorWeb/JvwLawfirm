@@ -4,7 +4,7 @@
 	<div id="sidebar" class="is-typeset editable colspan12-3 colspan6-2 colspan2-2 as-grid"><p><img src="media/photos/attorney/melanie.jpg" alt=""></p>
 <h2>Contact</h2>
 <p>Local Callers <strong><span class="clear-sides">(208) 667-0683</span></strong></p>
-<p><span class="clear-sides" style="font-size: medium;"><span class="clear-sides" style="display: inline !important;">Toll free line<br></span><strong><span class="clear-sides" style="display: inline !important;"><strong><span class="clear-sides" style="display: inline !important;">(888) 667-0683</span></strong></span></strong></span></p>
+<p><span class="clear-sides" style="font-size: medium;"><span class="clear-sides" >Toll free line<br></span><strong><span class="clear-sides" ><strong><span class="clear-sides" >(888) 667-0683</span></strong></span></strong></span></p>
 <hr>
 <h2>Practice Areas</h2>
 <ul>
@@ -45,20 +45,7 @@
 <li>Guardian Ad Litem</li>
 <li>Mediation</li>
 </ul>
-<hr>
-<h2>Other Attorneys</h2>
-<ul>
-<li><a href="craig">Craig K. Vernon</a></li>
-<li><a href="cynthia">Cynthia K.C. Meyer</a></li>
-<li><a href="dana">Dana L. Wetzel</a></li>
-<li><a href="douglas">Douglas A. Pierce</a></li>
-<li><a href="leander">Leander L. James</a></li>
-<li><a href="melanie">Melanie E. Baillie</a></li>
-<li><a href="stephen">Stephen J. Nemec</a></li>
-<li><a href="steven">Steven C. Wetzel</a></li>
-<li><a href="susan">Susan P. Weeks</a></li>
-<li><a href="wes">Wes Larsen</a></li>
-</ul></div>
+<?php include("_/inc/other-attorneys.php"); ?></div>
 
 	<div id="information" class="is-typeset editable colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter"><h1 class="headline">Melanie E. Baillie</h1>
 <h2>Associate</h2>
