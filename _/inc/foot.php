@@ -14,8 +14,13 @@
 							<br /><span class="error"><?php echo $nameError;?></span> 
 						<?php } ?>
 					</div>
-			        
-					<div class="colspan12-6 colspan6-6 colspan2-2 as-grid with-gutter formblock">
+
+		            <div class="colspan12-6 colspan6-6 colspan2-2 as-grid with-gutter formblock">
+		              <label class="screen-reader-text">Phone</label>
+		              <input type="text" name="phone" id="phone" value="<?php if(isset($_POST['phone']))  echo $_POST['phone'];?>" class="txt phone" placeholder="Phone: (optional)" />
+		            </div>
+
+					<div class="formblock clear">
 						<label class="screen-reader-text">Email</label>
 						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="txt requiredField email" placeholder="Email:" />
 						<?php if($emailError != '') { ?>
@@ -23,7 +28,7 @@
 						<?php } ?>
 					</div>
 			        
-					<div class="formblock">
+					<div class="formblock clear">
 						<label class="screen-reader-text">Message</label>
 						 <textarea name="comments" id="commentsText" class="txtarea requiredField" placeholder="Message:"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
 						<?php if($commentError != '') { ?>
@@ -57,9 +62,9 @@
 <footer class="contact-foot">
 	<div class="contact-btn row">
 		<div class="footlogo colspan12-6 colspan6-3 colspan2-2 as-grid"><img src="_/img/logo-full.png" alt=""></div>
-		<div class="footbtn colspan12-6 colspan6-3 colspan2-2 as-grid"><button type="button" role="button" id="contact-toggle">
+		<div class="footbtn colspan12-6 colspan6-3 colspan2-2 as-grid"><a href="#contact" type="button" role="button" id="contact-toggle">
 			Contact Us Today
-		</button></div>
+		</a></div>
 	</div>
 </footer>
 	<div id="credit" class="editable row credit">
@@ -71,18 +76,11 @@
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="_/js/responsive-nav.min.js"></script>
-		<script src="_/js/swipe.min.js"></script>
 		<script src="_/js/responsive-accordion.min.js"></script>
 		<script type="text/javascript">
 
 				var navigation = responsiveNav(".nav-collapse", {
 					customToggle: "#nav-toggle"
-				});
-
-				var elem = document.getElementById('slider');
-				
-				window.mySwipe = Swipe(elem, {
-				  	auto: 6000,
 				});
 
 		</script>
@@ -112,7 +110,7 @@
 				    var formInput = $(this).serialize();
 				    $.post($(this).attr('action'),formInput, function(data){
 				      $('form#contact-us').slideUp("fast", function() {          
-				        $(this).before('<p>Thanks for the message! We\'ll get back to you as soon as we can.</p>');
+				        $(this).before('<blockquote>Thanks for the message! We\'ll get back to you as soon as we can.</blockquote>');
 				      });
 				    });
 				  }

@@ -106,7 +106,7 @@ header.pagehead .navtop .white-logo {
 }
 header.pagehead .navtop #nav-toggle {
   float: right;
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   margin: 0;
   padding-bottom: 23px;
   padding-left: 15px;
@@ -124,7 +124,7 @@ header.pagehead .navtop #nav-toggle {
 header.pagehead .nav-collapse {
   overflow: hidden;
   *zoom: 1;
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   clear: both;
   text-align: center;
   font-weight: lighter;
@@ -489,11 +489,11 @@ body {
 }
 
 a {
-  color: #4c2a2e;
+  color: #5e2d33;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  color: #9e5760;
+  color: #b05a65;
 }
 a:not(> img) {
   white-space: pre;
@@ -591,7 +591,7 @@ section {
 
 #area-toggle {
   letter-spacing: 1px;
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   color: white;
   padding: 15px 20px;
   font-size: 1.5625em;
@@ -617,16 +617,28 @@ section {
   height: 0;
   display: none;
   margin-bottom: 35px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  list-style-type: none;
+  list-style-position: inside;
   overflow: hidden;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
+}
+.area-collapse li {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  list-style-type: none;
+  list-style-position: inside;
 }
 .area-collapse.marginbottom {
   margin-bottom: 80px;
 }
 .area-collapse .responsive-accordion-head {
   font-size: 1.5625em;
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   color: white;
 }
 .area-collapse .responsive-accordion-panel ul li {
@@ -655,16 +667,16 @@ section {
   margin-top: -30px;
   width: 20%;
   float: left;
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   position: relative;
   z-index: 1;
   color: white;
 }
 .lt-ie9 .area-collapse .responsive-accordion-head .fa {
-  color: #7d454c;
+  color: #92464f;
 }
 .lt-ie9 .area-collapse .responsive-accordion-head:hover, .lt-ie9 .area-collapse .responsive-accordion-head:active, .lt-ie9 .area-collapse .responsive-accordion-head.active {
-  background-color: #6d3c42;
+  background-color: #803e46;
 }
 .lt-ie9 .area-collapse .responsive-accordion-head:hover .fa, .lt-ie9 .area-collapse .responsive-accordion-head:active .fa, .lt-ie9 .area-collapse .responsive-accordion-head.active .fa {
   color: white;
@@ -710,16 +722,16 @@ section {
     margin-top: -30px;
     width: 20%;
     float: left;
-    background-color: #4c2a2e;
+    background-color: #5e2d33;
     position: relative;
     z-index: 1;
     color: white;
   }
   .area-collapse .responsive-accordion-head .fa {
-    color: #7d454c;
+    color: #92464f;
   }
   .area-collapse .responsive-accordion-head:hover, .area-collapse .responsive-accordion-head:active, .area-collapse .responsive-accordion-head.active {
-    background-color: #6d3c42;
+    background-color: #803e46;
   }
   .area-collapse .responsive-accordion-head:hover .fa, .area-collapse .responsive-accordion-head:active .fa, .area-collapse .responsive-accordion-head.active .fa {
     color: white;
@@ -860,7 +872,7 @@ section {
 .is-typeset blockquote {
   padding: 5%;
   clear: both;
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   color: white;
 }
 .is-typeset blockquote:before {
@@ -896,7 +908,8 @@ section {
   max-width: 450px;
   display: block;
 }
-.contact-foot .contact-btn button {
+.contact-foot .contact-btn a {
+  text-align: center;
   font-size: 1.25em;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -905,13 +918,13 @@ section {
   display: block;
   padding: 10px 45px;
 }
-.lt-ie9 .contact-foot .contact-btn button {
+.lt-ie9 .contact-foot .contact-btn a {
   font-size: 1.5625em;
   margin: 15px 25px 10px 0;
   padding: 10px 45px;
 }
 @media screen and (min-width: 600px) {
-  .contact-foot .contact-btn button {
+  .contact-foot .contact-btn a {
     font-size: 1.5625em;
     margin: 15px 25px 10px 0;
     padding: 10px 45px;
@@ -929,7 +942,7 @@ section {
 }
 
 .btn {
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   color: white;
   font-size: 0.75em;
   letter-spacing: 1px;
@@ -1093,7 +1106,7 @@ span {
   font-family: 'Garamond', 'Adobe Garamond', Garamond, Times, serif;
 }
 
-.font-sans, header.pagehead .nav-collapse ul li a, .area-collapse .responsive-accordion-panel, #contact small, .credit small, .btn, .gallery h4, label, .as-heading__large, .is-typeset h2, .as-heading__normal, .is-typeset h4, .as-heading__smallest, .is-typeset h6 {
+.font-sans, header.pagehead .nav-collapse ul li a, .area-collapse .responsive-accordion-panel, #contact small, .contact-foot .contact-btn a, .credit small, .btn, .gallery h4, label, .formblock span, .as-heading__large, .is-typeset h2, .as-heading__normal, .is-typeset h4, .as-heading__smallest, .is-typeset h6 {
   font-family: 'Gotham', arial, sans-serif;
 }
 
@@ -1181,6 +1194,20 @@ input, textarea {
   margin: 3px 0;
 }
 
+.formblock span {
+  background-color: #5e2d33;
+  color: white;
+  text-transform: uppercase;
+  padding: 3px 5px;
+  margin-top: -3px;
+  margin-bottom: 3px;
+  font-size: 0.625em;
+}
+
+.clear {
+  clear: both;
+}
+
 #contact button {
   margin: 0;
   padding: 0;
@@ -1198,7 +1225,7 @@ input, textarea {
 .as-heading__headline, .is-typeset .headline {
   font-size: 2em;
   line-height: 1.2375em;
-  background-color: #4c2a2e;
+  background-color: #5e2d33;
   padding: 10px 20px;
   color: white;
   display: inline-block;

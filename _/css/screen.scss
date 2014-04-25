@@ -134,6 +134,22 @@ section {
 	height: 0;
 	display: none;
 	margin-bottom: 35px;
+
+	//cancel for ie
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	margin-top: 0 !important;
+	list-style-type: none;
+	list-style-position: inside;
+
+	li {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	margin-top: 0 !important;
+	list-style-type: none;
+	list-style-position: inside;		
+	}
+
 	&.marginbottom {
 		margin-bottom: 80px;
 	}
@@ -346,7 +362,9 @@ section {
 				// width: 40%;
 			}
 		}
-		button {
+		a {
+			text-align: center;
+			@extend .font-sans;
 			font-size: em-font(20px);
 			letter-spacing: 2px;
 			text-transform: uppercase;
