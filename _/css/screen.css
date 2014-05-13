@@ -765,19 +765,19 @@ section {
   padding: 0px;
 }
 
-#contact {
+#contact-foot {
   background-color: #e6e6e6;
   padding: 20px 0 20px;
   position: relative;
 }
-#contact .contact-form-block {
+#contact-foot .contact-form-block {
   margin-bottom: 15px;
 }
-.lt-ie9 #contact {
+.lt-ie9 #contact-foot {
   padding-top: 60px;
   padding-bottom: 45px;
 }
-.lt-ie9 #contact:after {
+.lt-ie9 #contact-foot:after {
   content: "";
   height: 90px;
   width: 90px;
@@ -789,11 +789,11 @@ section {
   border-radius: 500px;
 }
 @media screen and (min-width: 600px) {
-  #contact {
+  #contact-foot {
     padding-top: 60px;
     padding-bottom: 45px;
   }
-  #contact:after {
+  #contact-foot:after {
     content: "";
     height: 90px;
     width: 90px;
@@ -805,10 +805,10 @@ section {
     border-radius: 500px;
   }
 }
-#contact button {
+#contact-foot button, #contact-foot .sub-mit {
   float: left;
 }
-#contact small {
+#contact-foot small {
   float: right;
   margin-top: 22px;
   text-transform: uppercase;
@@ -1107,7 +1107,7 @@ span {
   font-family: 'Garamond', 'Adobe Garamond', Garamond, Times, serif;
 }
 
-.font-sans, header.pagehead .nav-collapse ul li a, .area-collapse .responsive-accordion-panel, #contact small, .contact-foot .contact-btn a, .credit small, .btn, .gallery h4, label, .formblock span, .as-heading__large, .is-typeset h2, .as-heading__normal, .is-typeset h4, .as-heading__smallest, .is-typeset h6 {
+.font-sans, header.pagehead .nav-collapse ul li a, .area-collapse .responsive-accordion-panel, #contact-foot small, .contact-foot .contact-btn a, .credit small, .btn, .gallery h4, label, .formblock span, .as-heading__large, .is-typeset h2, .as-heading__normal, .is-typeset h4, .as-heading__smallest, .is-typeset h6 {
   font-family: 'Gotham', arial, sans-serif;
 }
 

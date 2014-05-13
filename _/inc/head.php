@@ -13,7 +13,6 @@
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="_/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>		
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 </head>
 <body>
 	<header class="pagehead pullwidth">

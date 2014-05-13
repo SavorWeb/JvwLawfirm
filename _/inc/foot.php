@@ -1,45 +1,34 @@
-<div id="contact">
+<div id="contact-foot">
 	<div class="row is-typeset">
-		<div class="contact-form-block colspan12-6 colspan6-3 colspan2-2 as-grid">
+		<div id="contact-form" class="contact-form-block colspan12-6 colspan6-3 colspan2-2 as-grid">
 				<h3>Contact Us</h3>
-			<?php if(isset($hasError) || isset($captchaError) ) { ?>
-			        <p class="alert">Error submitting the form</p>
-			    <?php } ?>
 		
-				<form id="contact-us" action="contact-submit.php" method="post">
+			<form id="contact" action="contact-submit.php" method="post">
+				<fieldset>	
 					<div class="colspan12-6 colspan6-6 colspan2-2 as-grid formblock">
-						<label class="screen-reader-text">Name</label>
-						<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="txt requiredField" placeholder="Name:" />
-						<?php if($nameError != '') { ?>
-							<br /><span class="error"><?php echo $nameError;?></span> 
-						<?php } ?>
+						<label for="name">Name</label>
+						<input required type="text" name="name" placeholder="Full Name" title="Enter your name" class="required">
 					</div>
 
 		            <div class="colspan12-6 colspan6-6 colspan2-2 as-grid with-gutter formblock">
-		              <label class="screen-reader-text">Phone</label>
-		              <input type="text" name="phone" id="phone" value="<?php if(isset($_POST['phone']))  echo $_POST['phone'];?>" class="txt phone" placeholder="Phone: (optional)" />
+						<label for="phone">Phone</label>
+						<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
 		            </div>
 
 					<div class="formblock clear">
-						<label class="screen-reader-text">Email</label>
-						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="txt requiredField email" placeholder="Email:" />
-						<?php if($emailError != '') { ?>
-							<br /><span class="error"><?php echo $emailError;?></span>
-						<?php } ?>
+						<label for="email">E-mail</label>
+						<input required type="email" name="email" placeholder="yourname@domain.com" title="Enter your e-mail address" class="required email">
 					</div>
 			        
 					<div class="formblock clear">
-						<label class="screen-reader-text">Message</label>
-						 <textarea name="comments" id="commentsText" class="txtarea requiredField" placeholder="Message:"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
-						<?php if($commentError != '') { ?>
-							<br /><span class="error"><?php echo $commentError;?></span> 
-						<?php } ?>
+						<label for="message">Message</label>
+						<textarea required name="message" placeholder="Your message" ></textarea>
 					</div>
 			        
-						<button name="submit" type="submit" class="btn subbutton">Send Email</button>
+						<input type="submit" name="submit" class="button btn" id="submit" value="Send Message" />
 						<small>I have read the <a href="privacy">disclaimer and privacy policy</a>.</small>
-						<input type="hidden" name="submitted" id="submitted" value="true" />
-				</form>
+				</fieldset>
+			</form>
 		</div>
 		<div id="find-us" class="editable colspan12-6 colspan6-3 colspan2-2 as-grid with-gutter">
 			<h3>Find Us</h3>
@@ -72,53 +61,35 @@
 		<hr>
 	</div>
 
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+	<script src="_/js/responsive-nav.min.js"></script>
+	<script src="_/js/responsive-accordion.min.js"></script>
 
-
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="_/js/responsive-nav.min.js"></script>
-		<script src="_/js/responsive-accordion.min.js"></script>
+	<script src="_/js/jquery.validate.min.js"></script>
+	<script src="_/js/jquery.placeholder.min.js"></script>
+	<script src="_/js/jquery.form.min.js"></script>
+	<script>
+		$(function(){
+		$('#contact').validate({
+		submitHandler: function(form) {
+		    $(form).ajaxSubmit({
+		    url: 'contact-submit.php',
+		    success: function() {
+		    $('#contact').hide();
+		    $('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
+		    }
+		    });
+		    }
+		});         
+		});
+	</script>
 		<script type="text/javascript">
 
 				var navigation = responsiveNav(".nav-collapse", {
 					customToggle: "#nav-toggle"
 				});
 
-		</script>
-		<script type="text/javascript">
-				<!--//--><![CDATA[//><!--
-				$(document).ready(function() {
-				$('form#contact-us').submit(function() {
-				  $('form#contact-us .error').remove();
-				  var hasError = false;
-				  $('.requiredField').each(function() {
-				    if($.trim($(this).val()) == '') {
-				      var labelText = $(this).prev('label').text();
-				      $(this).parent().append('<span style="display: block;" class="error">You forgot to enter your '+labelText+'.</span>');
-				      $(this).addClass('inputError');
-				      hasError = true;
-				    } else if($(this).hasClass('email')) {
-				      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-				      if(!emailReg.test($.trim($(this).val()))) {
-				        var labelText = $(this).prev('label').text();
-				        $(this).parent().append('<span class="error">Sorry! You\'ve entered an invalid '+labelText+'.</span>');
-				        $(this).addClass('inputError');
-				        hasError = true;
-				      }
-				    }
-				  });
-				  if(!hasError) {
-				    var formInput = $(this).serialize();
-				    $.post($(this).attr('action'),formInput, function(data){
-				      $('form#contact-us').slideUp("fast", function() {          
-				        $(this).before('<blockquote>Thanks for the message! We\'ll get back to you as soon as we can.</blockquote>');
-				      });
-				    });
-				  }
-				  
-				  return false; 
-				});
-				});
-				//-->!]]>
 		</script>
 		<script>
 		$(document).ready(function(){
@@ -151,6 +122,11 @@
 		  ga('create', 'UA-24403306-48', 'jvwlaw.net');
 		  ga('send', 'pageview');
 
+		</script>
+		<script>
+			if (!Modernizr.input.placeholder){
+			      $('input[placeholder], textarea[placeholder]').placeholder();
+			}
 		</script>
 		<script src="_/js/script.min.js"></script>
 
