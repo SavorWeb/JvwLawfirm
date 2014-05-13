@@ -60,7 +60,7 @@ if(isset($_POST['submitted'])) {
   // upon no failure errors let's email now!
   if(!isset($hasError)) {
     
-    $emailTo = 'contactus@jvwlaw.net';
+    $emailTo = 'korreiamaral@yahoo.com';
     $subject = 'Website contact from '.$name;
     $sendCopy = trim($_POST['sendCopy']);
     $body = "Name: $name \n\nEmail: $email \n\nPhone: $phone \n\nRequest: $comments";

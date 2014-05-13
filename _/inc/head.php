@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="initial-scale=1, user-scalable=no">
-	<meta name="description" content="James, Vernon, & Weeks, P.A. Helping People Solve Problems" />
+	<meta name="description" content="At James, Vernon & Weeks, P.A., we are committed to helping people solve problems. Our attorneys and staff are committed to providing quality legal representation and superior service for each of our valued clients." />
 	<meta name="keywords" content="Attorneys at Law, Law Assistance, Injuries, Personal, Business, Real Estate, Sexual Abuse, Helping People Solve Problems, Coeur d'Alene, Idaho" />
 
 	<title>James, Vernon, & Weeks, P.A.</title>
@@ -19,17 +19,17 @@
 	<header class="pagehead pullwidth">
 		<section class="row">
 			<div class="navtop">
-				<a href="/newjvw/"><img class="white-logo" src="_/img/logotype.png" alt=""></a>
+				<a href="/"><img class="white-logo" src="_/img/logotype.png" alt=""></a>
 
 				<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 			</div>
 
 			<nav class="nav-collapse">
 				<ul>
-					<li><a href="/newjvw/">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="/newjvw/about">About</a></li>
-					<li><a href="/newjvw/attorneys">Attorneys</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/attorneys">Attorneys</a></li>
 				</ul>
 				<ul class="phonenumbers">
 					<li><a href="tel:6676670683"><span>Local callers</span> (208) 667-0683</a></li>
@@ -38,9 +38,9 @@
 			</nav>
 
 		<section class="logos">
-			<div class="logotype"><a href="/newjvw/"><img src="_/img/logotype-dark.png" alt=""></a></div>
+			<div class="logotype"><a href="/"><img src="_/img/logotype-dark.png" alt=""></a></div>
 			<div class="slogan"><img src="_/img/slogan.png" alt=""></div>
-			<div class="logo"><a href="/newjvw/"><img src="_/img/logo.png" alt=""></a></div>
+			<div class="logo"><a href="/"><img src="_/img/logo.png" alt=""></a></div>
 		</section>
 	</section>
 	<div class="fullwidthimg"></div>
